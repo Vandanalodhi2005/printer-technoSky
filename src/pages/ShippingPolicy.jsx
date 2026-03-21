@@ -183,7 +183,7 @@ const ShippingPolicy = () => {
             <section className="policy-section">
               <h2>Address Accuracy</h2>
               <p>Please ensure your shipping address is complete and accurate before checkout.</p>
-              <p>Prints Carts is not responsible for:</p>
+              <p>Ink Kart LLC is not responsible for:</p>
               <ul>
                 <li>Delays caused by incorrect addresses</li>
                 <li>Packages delivered to wrong locations</li>
@@ -237,8 +237,8 @@ const ShippingPolicy = () => {
             {/* Contact Section */}
             <div className="contact-info-box">
               <h3>Questions About Shipping?</h3>
-              <p>📧 Email: <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
-              <p>🌐 Website: <a href="https://www.printscarts.com">www.printscarts.com</a></p>
+              <p>📧 Email: <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
+              <p>🌐 Website: <a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
               <p>We aim to respond promptly during standard business hours.</p>
             </div>
           </div>
@@ -250,3 +250,5 @@ const ShippingPolicy = () => {
 };
 
 export default ShippingPolicy;
+
+

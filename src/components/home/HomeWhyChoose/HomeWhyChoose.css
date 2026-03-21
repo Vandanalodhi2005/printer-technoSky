@@ -1,6 +1,7 @@
 .home-why-choose {
-    padding: 100px 20px;
-    background: #f8faff;
+    padding: 120px 20px;
+    background: #ffffff;
+    border-top: 1px solid #f0f0f0;
 }
 
 .why-choose-container {
@@ -13,78 +14,97 @@
 }
 
 .home-why-choose .section-title {
-    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
     font-weight: 800;
-    color: #0f3d91;
-    margin-bottom: 60px;
+    color: #111111;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .why-choose-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    gap: 40px;
 }
 
 .why-card {
     background: #fff;
-    padding: 40px;
-    border-radius: 20px;
+    padding: 60px;
+    border-radius: 0px;
     display: flex;
-    gap: 24px;
-    box-shadow: 0 10px 30px rgba(15, 61, 145, 0.05);
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid #f0f0f0;
 }
 
 .why-card:hover {
-    transform: translateY(-5px);
-    border-color: #0f3d91;
-    box-shadow: 0 15px 40px rgba(15, 61, 145, 0.1);
+    transform: translateY(-8px);
+    border-color: #B19777;
+    box-shadow: 0 30px 60px rgba(177, 151, 119, 0.1);
 }
 
 .why-icon-container {
-    width: 60px;
-    height: 60px;
-    background: rgba(15, 61, 145, 0.1);
-    color: #0f3d91;
-    border-radius: 12px;
+    width: 64px;
+    height: 64px;
+    background: transparent;
+    color: #B19777;
+    border-radius: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    border: 1px solid #B19777;
+    transition: all 0.4s ease;
+}
+
+.why-card:hover .why-icon-container {
+    background: #B19777;
+    color: #fff;
 }
 
 .why-content h3 {
-    font-size: 19px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 20px;
     line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 .why-content p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #666;
+    font-size: 14px;
+    line-height: 2;
+    color: #555;
     margin: 0;
 }
 
 @media (max-width: 768px) {
     .home-why-choose {
-        padding: 60px 20px;
+        padding: 80px 20px;
     }
 
     .why-card {
-        flex-direction: column;
-        padding: 30px;
-        text-align: center;
+        padding: 40px;
+        text-align: left;
+        align-items: flex-start;
     }
 
     .why-icon-container {
-        margin: 0 auto;
+        margin: 0;
     }
 
     .why-choose-grid {
         grid-template-columns: 1fr;
+    }
+
+    .home-why-choose .section-title {
+        font-size: 32px;
     }
 }

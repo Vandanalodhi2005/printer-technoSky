@@ -1,75 +1,125 @@
-.home-commitment {
-    padding: 100px 20px;
-    background: #0f3d91;
-    color: #fff;
+.home-commitment-dark {
+    padding: 180px 40px;
+    background: #000000;
+    color: #ffffff;
+    overflow: hidden;
 }
 
-.commitment-container {
-    max-width: 1300px;
+.commitment-elite-content {
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
     align-items: center;
 }
 
-.home-commitment .section-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-.commitment-content p {
-    font-size: 18px;
-    line-height: 1.8;
-    opacity: 0.9;
-    margin-bottom: 24px;
-}
-
-.commitment-stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.stat-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 30px 20px;
-    border-radius: 16px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.stat-item:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.stat-value {
-    display: block;
-    font-size: 28px;
-    font-weight: 800;
-    margin-bottom: 8px;
-}
-
-.stat-label {
-    font-size: 14px;
-    font-weight: 600;
+.elite-badge-gold {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #B19777;
+    color: #B19777;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
 }
 
-@media (max-width: 968px) {
-    .commitment-container {
+.title-massive {
+    font-family: 'Montserrat';
+    font-weight: 950;
+    font-size: 42px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+
+.commitment-paragraphs p {
+    font-family: 'Poppins';
+    font-size: 15px;
+    line-height: 2.2;
+    color: #888;
+    margin-bottom: 40px;
+    max-width: 550px;
+}
+
+/* Stats Grid */
+.commitment-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.stat-card-technical {
+    position: relative;
+    padding: 40px;
+    background: linear-gradient(90deg, #111 0%, transparent 100%);
+    border-left: 1px solid #222;
+    transition: all 0.5s;
+}
+
+.stat-card-technical:hover {
+    background: linear-gradient(90deg, #1a1a1a 0%, transparent 100%);
+    border-left-color: #B19777;
+    transform: translateX(10px);
+}
+
+.stat-line {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 2px;
+    height: 0;
+    background: #B19777;
+    transition: 0.5s;
+}
+
+.stat-card-technical:hover .stat-line {
+    height: 100%;
+}
+
+.stat-val {
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 950;
+    font-size: 48px;
+    color: #ffffff;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.stat-desc {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #B19777;
+}
+
+@media (max-width: 1280px) {
+    .commitment-elite-content { gap: 60px; }
+    .title-massive { font-size: 48px; }
+    .stat-val { font-size: 38px; }
+}
+
+@media (max-width: 1024px) {
+    .commitment-elite-content {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 80px;
         text-align: center;
     }
+    .commitment-paragraphs p { margin-left: auto; margin-right: auto; }
+    .stat-card-technical { padding: 30px; text-align: center; background: none; border-left: none; border-bottom: 1px solid #222; }
+    .stat-card-technical:hover { transform: translateY(-5px); border-bottom-color: #B19777; }
+    .stat-line { display: none; }
+}
 
-    .commitment-stats {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
+@media (max-width: 768px) {
+    .home-commitment-dark { padding: 100px 20px; }
+    .title-massive { font-size: 32px; }
 }

@@ -202,9 +202,9 @@ const CookiePolicy = () => {
                         {/* Contact Section */}
                         <div className="contact-info-box">
                             <h3>Questions About Cookies?</h3>
-                            <p>📧 Email: <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                            <p>📧 Email: <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                             <p>📍 Address: 7181 Beacon Dr 15, Reno, NV 89506</p>
-                            <p>🌐 Website: <a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                            <p>🌐 Website: <a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                             <p>We're happy to clarify anything related to privacy or website functionality.</p>
                         </div>
                     </div>
@@ -216,3 +216,5 @@ const CookiePolicy = () => {
 };
 
 export default CookiePolicy;
+
+

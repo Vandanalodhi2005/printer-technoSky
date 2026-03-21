@@ -32,7 +32,7 @@ const HomeWhyChoose = () => {
         },
         {
             title: 'Wide Selection for Every Need',
-            description: 'From compact home printers to office-ready devices, and from ink cartridges to everyday printing supplies, Prints Carts offers a broad range of options to meet different printing requirements.',
+            description: 'From compact home printers to office-ready devices, and from ink cartridges to everyday printing supplies, Ink Kart LLC offers a broad range of options to meet different printing requirements.',
             icon: (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="14" y="14" width="7" height="7" /><rect x="3" y="14" width="7" height="7" />
@@ -53,7 +53,7 @@ const HomeWhyChoose = () => {
     return (
         <section className="home-why-choose">
             <div className="why-choose-container">
-                <h2 className="section-title text-center">Why Shop with Prints Carts?</h2>
+                <h2 className="section-title text-center">Why Shop with Ink Kart LLC?</h2>
                 <div className="why-choose-grid">
                     {reasons.map((reason, index) => (
                         <div key={index} className="why-card">
@@ -73,3 +73,4 @@ const HomeWhyChoose = () => {
 };
 
 export default HomeWhyChoose;
+

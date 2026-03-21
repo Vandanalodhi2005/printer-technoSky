@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
         </svg>
       ),
       title: "Wide Selection for Every Need",
-      description: "From compact home printers to office-ready devices, and from ink cartridges to everyday printing supplies, Prints Carts offers a broad range of options to meet different printing requirements."
+      description: "From compact home printers to office-ready devices, and from ink cartridges to everyday printing supplies, Ink Kart LLC offers a broad range of options to meet different printing requirements."
     },
     {
       icon: (
@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
     <>
       <section className="why-choose-us">
         <div className="why-choose-container">
-          <h2>Why Shop with Prints Carts?</h2>
+          <h2>Why Shop with Ink Kart LLC?</h2>
           <div className="reasons-grid">
             {reasons.map((reason, index) => (
               <div key={index} className="reason-card">
@@ -159,5 +159,6 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
+
 
 

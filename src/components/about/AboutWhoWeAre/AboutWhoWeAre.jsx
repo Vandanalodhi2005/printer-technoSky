@@ -6,7 +6,7 @@ const AboutWhoWeAre = () => {
         <section className="who-we-are">
             <h2>Who We Are</h2>
             <p>
-                Prints Carts was created with a straightforward goal: <strong>to provide reliable products
+                Ink Kart LLC was created with a straightforward goal: <strong>to provide reliable products
                     with transparent information and a smooth online shopping experience.</strong>
             </p>
             <p>
@@ -24,3 +24,4 @@ const AboutWhoWeAre = () => {
 };
 
 export default AboutWhoWeAre;
+

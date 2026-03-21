@@ -4,7 +4,7 @@ import './AboutWhyChoose.css';
 const AboutWhyChoose = () => {
     return (
         <section className="why-choose">
-            <h2>Why Customers Choose Prints Carts</h2>
+            <h2>Why Customers Choose Ink Kart LLC</h2>
             <div className="choose-grid">
                 <div className="choose-card">
                     <h3>Dependable Shopping Experience</h3>
@@ -39,3 +39,4 @@ const AboutWhyChoose = () => {
 };
 
 export default AboutWhyChoose;
+

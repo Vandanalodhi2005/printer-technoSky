@@ -12,282 +12,193 @@ const InkjetVsLaserGuide = () => {
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
 
-      <div className="flex-grow pt-8 pb-16">
+      <div className="flex-grow pt-16 pb-24">
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb / Back Link */}
-          <div className="mb-8">
-            <Link to="/blogs" className="text-sm font-medium text-gray-500 hover:text-primary transition-colors">
-              &larr; Back to Blog
+          <div className="mb-12">
+            <Link to="/blogs" className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 hover:text-[#B19777] transition-all flex items-center gap-2">
+              <span className="text-lg">←</span> Back to Selection
             </Link>
           </div>
 
           {/* Article Header */}
-          <header className="mb-10 pb-10 border-b border-gray-200">
-            <span className="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded mb-4 uppercase tracking-wider">
-              Buying Guide
+          <header className="mb-16 pb-16 border-b border-gray-100">
+            <span className="inline-block bg-[#111111] text-[#B19777] text-[10px] font-black px-4 py-2 mb-8 uppercase tracking-widest">
+              Tech Analysis
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Inkjet vs Laser Printers (2026 Buying Guide) — Which One Is Right for You?
+            <h1 className="font-['Montserrat'] text-3xl md:text-5xl font-black text-[#111111] mb-8 uppercase tracking-wider leading-tight">
+              Inkjet vs Laser Printers (2026 Analysis) — The Definitive Comparison
             </h1>
-            <div className="flex items-center text-gray-500 text-sm">
-              <span className="font-semibold text-gray-900 mr-2">By PrintsCarts Team</span>
-              <span className="mx-2">•</span>
+            <div className="flex items-center text-[10px] uppercase tracking-widest font-bold text-gray-400">
+              <span className="text-[#111111]">By Ink Kart LLC Team</span>
+              <span className="mx-4 text-[#B19777]">•</span>
               <span>February 11, 2026</span>
-              <span className="mx-2">•</span>
+              <span className="mx-4 text-[#B19777]">•</span>
               <span>8 min read</span>
             </div>
           </header>
 
           {/* Main Content */}
-          <div className="prose prose-lg prose-blue max-w-none text-gray-700">
+          <div className="prose prose-lg max-w-none text-gray-600">
             
             {/* Introduction */}
-            <p className="lead text-xl text-gray-600 mb-8 font-light">
+            <p className="lead text-lg text-gray-500 mb-10 font-medium leading-relaxed italic">
               Choosing the right printer is one of the most important decisions for home users, students, offices, and businesses. In 2026, printing technology continues to advance, but the primary decision still comes down to one key question: <strong>Should you buy an inkjet printer or a laser printer?</strong>
             </p>
-            <p className="mb-6">
+            <p className="mb-8 leading-loose">
               Both printer types offer unique advantages, cost differences, and specific use-case benefits. However, most users struggle to understand the technical and financial differences between inkjet and laser printers — especially when buying for the long term.
             </p>
-            <p className="mb-8">
+            <p className="mb-12 leading-loose">
               This detailed guide breaks down everything you need to know, from how they work to real-world scenarios and updated 2026 recommendations. Whether you're buying for your home, your business, or your remote workspace, this guide will help you make the most informed choice.
             </p>
 
             {/* What is Inkjet */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">What Is an Inkjet Printer?</h2>
-            <p className="mb-4">Inkjet printers use liquid ink sprayed through microscopic nozzles to create images and text on paper.</p>
-            <div className="bg-blue-50 p-6 rounded-lg mb-8">
-                <h3 className="font-bold text-lg text-primary mb-2">How Inkjet Printers Work</h3>
-                <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Ink cartridges contain colored or black liquid ink.</li>
-                    <li>Ink is pushed through tiny nozzles in the printhead.</li>
-                    <li>The printhead moves across the page and sprays ink in precise patterns.</li>
-                    <li><strong>Result:</strong> Excellent for producing high-quality images with smooth gradients and rich colors.</li>
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-16 mb-8 uppercase tracking-widest border-l-4 border-[#B19777] pl-6">What Is an Inkjet Printer?</h2>
+            <p className="mb-6 leading-loose">Inkjet printers use liquid ink sprayed through microscopic nozzles to create images and text on paper.</p>
+            <div className="bg-[#111111] p-10 mb-12 border border-gray-100">
+                <h3 className="font-['Montserrat'] font-black text-xs text-[#B19777] mb-6 uppercase tracking-[0.2em]">How Inkjet Printers Work</h3>
+                <ul className="list-none pl-0 space-y-4 text-[11px] font-bold text-gray-400 uppercase tracking-widest">
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">01.</span> Cartridges contain high-chroma liquid ink.</li>
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">02.</span> Ink is pushed through microscopic ceramic nozzles.</li>
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">03.</span> The printhead scans the media in precision patterns.</li>
+                    <li className="flex items-center gap-4 pt-4 border-t border-white/10 text-white"><span className="w-8 h-[1px] bg-[#B19777]"></span> Result: Superior color depth & tonal gradations.</li>
                 </ul>
             </div>
 
             {/* What is Laser */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">What Is a Laser Printer?</h2>
-            <p className="mb-4">Laser printers use toner powder and a heated drum to produce extremely sharp text and fast prints.</p>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-100">
-                <h3 className="font-bold text-lg text-gray-900 mb-2">How Laser Printers Work</h3>
-                <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                    <li>A laser beam draws the image onto the drum unit.</li>
-                    <li>Toner powder is attracted to the charged areas.</li>
-                    <li>Heat and pressure fuse the toner onto the paper.</li>
-                    <li><strong>Result:</strong> Delivers clean, crisp, smear-free prints at high speed. Ideal for high-volume printing and office environments.</li>
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-16 mb-8 uppercase tracking-widest border-l-4 border-[#B19777] pl-6">What Is a Laser Printer?</h2>
+            <p className="mb-6 leading-loose">Laser printers use toner powder and a heated drum to produce extremely sharp text and fast prints.</p>
+            <div className="bg-[#fafafa] p-10 mb-12 border border-gray-100">
+                <h3 className="font-['Montserrat'] font-black text-xs text-[#B19777] mb-6 uppercase tracking-[0.2em]">How Laser Printers Work</h3>
+                <ul className="list-none pl-0 space-y-4 text-[11px] font-bold text-gray-500 uppercase tracking-widest">
+                    <li className="flex items-start gap-4"><span className="text-[#111111]">01.</span> A laser beam draws high-res paths onto the drum.</li>
+                    <li className="flex items-start gap-4"><span className="text-[#111111]">02.</span> Dry toner powder adheres to electrostatic charges.</li>
+                    <li className="flex items-start gap-4"><span className="text-[#111111]">03.</span> Heat and pressure fuse molecules onto the paper.</li>
+                    <li className="flex items-center gap-4 pt-4 border-t border-gray-100 text-[#111111]"><span className="w-8 h-[1px] bg-[#B19777]"></span> Result: Crisp, smudge-proof document output.</li>
                 </ul>
             </div>
 
             {/* Deep Comparison */}
-            <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-8 border-b pb-4">Inkjet vs Laser: A Deep Comparison Across All Categories (2026)</h2>
+            <h2 className="font-['Montserrat'] text-3xl font-black text-[#111111] mt-24 mb-12 uppercase tracking-[0.2em] text-center">Comparative Standards</h2>
+            <div className="w-20 h-1 bg-[#B19777] mx-auto mb-16"></div>
 
             {/* 1. Print Quality */}
-            <div className="mb-10">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">1. Print Quality Comparison</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h4 className="font-bold text-blue-700 mb-2">Inkjet Printers</h4>
-                        <ul className="space-y-1 text-sm text-gray-600 mb-2">
-                             <li>• Color accuracy</li>
-                             <li>• Photo printing</li>
-                             <li>• Gradients and smooth transitions</li>
-                             <li>• Creative projects</li>
+            <div className="mb-20">
+                <h3 className="font-['Montserrat'] text-xl font-black text-[#111111] mb-8 uppercase tracking-wider">01. Output Fidelity</h3>
+                <div className="grid md:grid-cols-2 gap-0 border border-gray-100">
+                    <div className="p-10 bg-white border-r border-gray-100">
+                        <h4 className="font-['Montserrat'] text-[10px] font-black text-[#B19777] mb-6 uppercase tracking-[0.25em]">Inkjet Dominance</h4>
+                        <ul className="space-y-4 text-[10px] font-black text-gray-500 uppercase tracking-widest list-none pl-0">
+                             <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#B19777]"></span> Color accuracy</li>
+                             <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#B19777]"></span> Photo Excellence</li>
+                             <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#B19777]"></span> Smooth Gradients</li>
                         </ul>
-                        <p className="text-sm">They use liquid ink that blends naturally on photo paper.</p>
                     </div>
-                    <div>
-                        <h4 className="font-bold text-gray-800 mb-2">Laser Printers</h4>
-                        <ul className="space-y-1 text-sm text-gray-600 mb-2">
-                             <li>• Crisper text</li>
-                             <li>• Sharp lines</li>
-                             <li>• Clear black-and-white documents</li>
-                             <li>• Business paperwork</li>
+                    <div className="p-10 bg-[#fafafa]">
+                        <h4 className="font-['Montserrat'] text-[10px] font-black text-[#111111] mb-6 uppercase tracking-[0.25em]">Laser Dominance</h4>
+                        <ul className="space-y-4 text-[10px] font-black text-gray-400 uppercase tracking-widest list-none pl-0">
+                             <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#111111]"></span> Text Precision</li>
+                             <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#111111]"></span> Sharp Micro-Lines</li>
+                             <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#111111]"></span> Business Clarity</li>
                         </ul>
-                        <p className="text-sm">Laser prints do not smear and look more “professional” for documents.</p>
                     </div>
                 </div>
-                <div className="mt-4 bg-green-50 text-green-800 px-4 py-2 rounded font-semibold text-sm inline-block">
-                    Winner: Inkjet for Photos & Color | Laser for Documents & Text
-                </div>
+                <div className="mt-8 text-[10px] font-black text-[#B19777] uppercase tracking-[0.3em]">Status: Dual Specialty Verification Complete</div>
             </div>
 
             {/* 2. Speed */}
-            <div className="mb-10">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">2. Speed Comparison</h3>
-                <p className="mb-4">Laser printers are significantly faster than inkjets, making them ideal for bulk tasks.</p>
-                <div className="grid grid-cols-2 gap-4 text-center mb-4">
-                    <div className="bg-gray-100 p-4 rounded">
-                        <span className="block font-bold">Inkjet Speed</span>
-                        <span className="text-sm">8–15 ppm (Black)</span>
+            <div className="mb-20">
+                <h3 className="font-['Montserrat'] text-xl font-black text-[#111111] mb-8 uppercase tracking-wider">02. Temporal Efficiency</h3>
+                <p className="mb-8 leading-loose text-sm font-medium italic text-gray-400">Laser systems are engineered for high-velocity output in demanding environments.</p>
+                <div className="grid grid-cols-2 gap-0 border border-[#111111]">
+                    <div className="bg-white p-10 text-center border-r border-[#111111]">
+                        <span className="block font-['Montserrat'] font-black uppercase tracking-widest text-xs text-[#B19777] mb-2">Inkjet</span>
+                        <span className="text-xl font-black text-[#111111]">8–15 PPM</span>
                     </div>
-                    <div className="bg-gray-800 text-white p-4 rounded">
-                        <span className="block font-bold">Laser Speed</span>
-                        <span className="text-sm">20–45 ppm (Black)</span>
+                    <div className="bg-[#111111] p-10 text-center text-white">
+                        <span className="block font-['Montserrat'] font-black uppercase tracking-widest text-xs text-[#B19777] mb-2">Laser</span>
+                        <span className="text-xl font-black">20–45 PPM</span>
                     </div>
-                </div>
-                <div className="mt-2 text-sm text-gray-600 italic">
-                    For any office, remote work, school assignment rush, or bulk printing — laser wins easily.
                 </div>
             </div>
 
             {/* 3. Cost Per Page */}
-             <div className="mb-10">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">3. Cost Per Page (Long-Term Expense)</h3>
-                <p className="mb-4">This is where many users overspend without realizing it.</p>
+             <div className="mb-20">
+                <h3 className="font-['Montserrat'] text-xl font-black text-[#111111] mb-8 uppercase tracking-wider">03. Financial Yield</h3>
+                <p className="mb-10 leading-loose text-sm font-medium">Long-term operational value remains the most critical metric for enterprise and residential scale.</p>
                 
-                <div className="overflow-hidden border border-gray-200 rounded-lg mb-4">
-                    <table className="min-w-full text-sm text-left">
-                        <thead className="bg-gray-50 font-bold">
+                <div className="overflow-x-auto mb-10 border border-[#111111]">
+                    <table className="min-w-full text-[10px] font-black uppercase tracking-[0.2em] text-left">
+                        <thead className="bg-[#111111] text-[#B19777]">
                             <tr>
-                                <th className="px-4 py-2">Type</th>
-                                <th className="px-4 py-2">Black Page Cost</th>
-                                <th className="px-4 py-2">Color Page Cost</th>
+                                <th className="px-8 py-6 border-r border-[#B19777]/20">Type</th>
+                                <th className="px-8 py-6 border-r border-[#B19777]/20">Black document</th>
+                                <th className="px-8 py-6">Color document</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr className="border-t">
-                                <td className="px-4 py-2 font-medium">Inkjet</td>
-                                <td className="px-4 py-2">$0.08 – $0.15</td>
-                                <td className="px-4 py-2">$0.15 – $0.50</td>
+                        <tbody className="bg-white">
+                            <tr className="border-t border-gray-100">
+                                <td className="px-8 py-6 border-r border-gray-100 font-black text-[#111111]">Inkjet</td>
+                                <td className="px-8 py-6 border-r border-gray-100 text-gray-400">$0.08 – $0.15</td>
+                                <td className="px-8 py-6 text-gray-400">$0.15 – $0.50</td>
                             </tr>
-                            <tr className="border-t bg-green-50">
-                                <td className="px-4 py-2 font-medium">Laser</td>
-                                <td className="px-4 py-2">$0.02 – $0.05</td>
-                                <td className="px-4 py-2">$0.10 – $0.20</td>
+                            <tr className="border-t border-[#B19777] bg-[#fafafa]">
+                                <td className="px-8 py-6 border-r border-[#B19777]/20 font-black text-[#111111]">Laser</td>
+                                <td className="px-8 py-6 border-r border-[#B19777]/20 text-[#B19777]">$0.02 – $0.05</td>
+                                <td className="px-8 py-6 text-[#B19777]">$0.10 – $0.20</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div className="bg-yellow-50 text-yellow-800 px-4 py-3 rounded text-sm">
-                    <strong>Note:</strong> Laser printers provide 3× to 5× lower cost per page. Larger toner cartridges mean cheaper long-term printing.
+                <div className="p-8 bg-[#111111] border-l-8 border-[#B19777] text-[10px] font-black text-gray-400 uppercase tracking-widest leading-loose">
+                    <strong className="text-white">Note:</strong> Laser printers generate a 3× to 5× superior yield per consumable cycle.
                 </div>
             </div>
 
-            {/* 4. Upfront Cost */}
-            <div className="mb-10">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">4. Upfront Printer Cost</h3>
-                <p className="mb-4">Inkjet printers are cheaper to buy initially ($60–$250), whereas Laser printers cost more upfront ($120–$500) but offer huge long-term savings.</p>
-                <div className="text-sm font-semibold text-primary">Winner (Upfront Cost): Inkjet Printers</div>
-            </div>
-
-            {/* 5-9 Rapid Fire */}
-            <div className="mb-12 grid gap-6 md:grid-cols-2">
-                 <div className="bg-gray-50 p-5 rounded">
-                     <h4 className="font-bold text-gray-900 mb-2">5. Color Printing Quality</h4>
-                     <p className="text-sm text-gray-600 mb-2">Inkjet is best for bright, vivid colors and smooth gradients (photos, brochures). Laser is accurate but not ideal for high-res photos.</p>
-                     <p className="text-xs font-bold text-primary">Winner: Inkjet Printers</p>
+            {/* Summary List */}
+            <div className="mb-20 grid gap-0 md:grid-cols-2 border border-gray-100">
+                 <div className="p-12 bg-white border-b md:border-b-0 md:border-r border-gray-100">
+                     <h4 className="font-['Montserrat'] font-black text-xs text-[#B19777] mb-8 uppercase tracking-[0.2em]">Liquid ink benefits</h4>
+                     <ul className="space-y-4 text-[10px] font-black text-gray-500 uppercase tracking-widest list-none pl-0">
+                        <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#B19777]"></span> Lower Initial Investment</li>
+                        <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#B19777]"></span> Superior Photo Dynamic Range</li>
+                        <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#B19777]"></span> Acoustic Signature: Low</li>
+                     </ul>
                  </div>
-                 <div className="bg-gray-50 p-5 rounded">
-                     <h4 className="font-bold text-gray-900 mb-2">6. Black-and-White Quality</h4>
-                     <p className="text-sm text-gray-600 mb-2">Laser produces ultra-sharp, smudge-proof text ideal for business documents.</p>
-                     <p className="text-xs font-bold text-primary">Winner: Laser Printers</p>
-                 </div>
-                 <div className="bg-gray-50 p-5 rounded">
-                     <h4 className="font-bold text-gray-900 mb-2">7. Maintenance</h4>
-                     <p className="text-sm text-gray-600 mb-2">Laser is more durable with minimal clogs. Inkjets require printhead cleaning and can dry out if unused.</p>
-                     <p className="text-xs font-bold text-primary">Winner: Laser Printers</p>
-                 </div>
-                 <div className="bg-gray-50 p-5 rounded">
-                     <h4 className="font-bold text-gray-900 mb-2">8. Noise Level</h4>
-                     <p className="text-sm text-gray-600 mb-2">Inkjet printers are quieter overall compared to laser printers.</p>
-                     <p className="text-xs font-bold text-primary">Winner: Inkjet Printers</p>
+                 <div className="p-12 bg-[#fafafa]">
+                     <h4 className="font-['Montserrat'] font-black text-xs text-[#111111] mb-8 uppercase tracking-[0.2em]">Electrophotographic benefits</h4>
+                     <ul className="space-y-4 text-[10px] font-black text-gray-400 uppercase tracking-widest list-none pl-0">
+                        <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#111111]"></span> Extreme Text Resolution</li>
+                        <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#111111]"></span> Zero Smear Technology</li>
+                        <li className="flex items-center gap-3"><span className="w-4 h-[1px] bg-[#111111]"></span> Component Longevity</li>
+                     </ul>
                  </div>
             </div>
 
-
-            {/* Summary Table */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Inkjet vs Laser: Summary Table (2026)</h2>
-             <div className="overflow-x-auto mb-12">
-              <table className="min-w-full text-sm text-left text-gray-600 border border-gray-200">
-                <thead className="bg-gray-100 text-gray-700 font-bold uppercase">
-                  <tr>
-                    <th className="px-4 py-3">Category</th>
-                    <th className="px-4 py-3">Inkjet Printer</th>
-                    <th className="px-4 py-3">Laser Printer</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr><td className="px-4 py-3 font-medium">Best For</td><td className="px-4 py-3">Photos & Color</td><td className="px-4 py-3">Text & Bulk Printing</td></tr>
-                  <tr><td className="px-4 py-3 font-medium">Speed</td><td className="px-4 py-3">Medium</td><td className="px-4 py-3">Very Fast</td></tr>
-                  <tr><td className="px-4 py-3 font-medium">Cost Per Page</td><td className="px-4 py-3">Higher</td><td className="px-4 py-3">Low</td></tr>
-                  <tr><td className="px-4 py-3 font-medium">Maintenance</td><td className="px-4 py-3">Moderate–High</td><td className="px-4 py-3">Low</td></tr>
-                  <tr><td className="px-4 py-3 font-medium">Photo Quality</td><td className="px-4 py-3">Best</td><td className="px-4 py-3">Poor–Moderate</td></tr>
-                </tbody>
-              </table>
-            </div>
-
-            {/* Which Should You Choose */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Which Printer Should YOU Choose in 2026?</h2>
-            
-            <div className="space-y-6 mb-12">
-                <div className="border-l-4 border-blue-500 pl-4">
-                    <h3 className="font-bold text-lg text-gray-900">1. Home Users & Families → Inkjet Printer</h3>
-                    <p className="text-sm text-gray-600 mb-1">Good for homework, kids’ projects, and photo printing with an affordable upfront cost.</p>
-                    <p className="text-xs font-semibold text-primary">Recommended: Canon PIXMA, HP DeskJet</p>
+            {/* Curated Verdict */}
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-24 mb-10 uppercase tracking-widest text-center">Selection Protocol</h2>
+            <div className="grid sm:grid-cols-2 gap-0 mb-20 border border-[#111111]">
+                <div className="bg-[#111111] text-white p-12 border-b sm:border-b-0 sm:border-r border-[#B19777]/20">
+                    <h4 className="font-['Montserrat'] font-black text-xs text-[#B19777] mb-8 uppercase tracking-[0.25em]">Residential & Creative</h4>
+                    <p className="text-[10px] uppercase tracking-widest font-black text-gray-500 mb-6">Optimized for photography and diverse media projects.</p>
+                    <ul className="space-y-4 text-[10px] font-black uppercase tracking-widest list-none pl-0">
+                        <li className="flex items-center gap-3"><span className="w-8 h-[1px] bg-[#B19777]"></span> Canon PIXMA Photo Series</li>
+                        <li className="flex items-center gap-3"><span className="w-8 h-[1px] bg-[#B19777]"></span> Epson Expression series</li>
+                    </ul>
                 </div>
-                
-                <div className="border-l-4 border-blue-500 pl-4">
-                    <h3 className="font-bold text-lg text-gray-900">2. Students → Inkjet / Smart Tank</h3>
-                    <p className="text-sm text-gray-600 mb-1">Perfect for color assignments and photo projects. Tank printers lower costs significantly.</p>
-                     <p className="text-xs font-semibold text-primary">Recommended: Epson EcoTank, Hp Smart Tank</p>
-                </div>
-
-                <div className="border-l-4 border-gray-800 pl-4">
-                    <h3 className="font-bold text-lg text-gray-900">3. Remote Workers → Laser Printer</h3>
-                    <p className="text-sm text-gray-600 mb-1">High speed, reliable, and very low cost per page for text-heavy work.</p>
-                     <p className="text-xs font-semibold text-primary">Recommended: Brother HL-L2350DW, HP LaserJet</p>
-                </div>
-
-                 <div className="border-l-4 border-gray-800 pl-4">
-                    <h3 className="font-bold text-lg text-gray-900">4. Small Business Owners → Laser Printer</h3>
-                    <p className="text-sm text-gray-600 mb-1">Handles high volumes easily with sharp business documents and cheaper long-term costs.</p>
-                     <p className="text-xs font-semibold text-primary">Recommended: Brother Color Laser, HP Color LaserJet Pro</p>
-                </div>
-
-                <div className="border-l-4 border-indigo-500 pl-4 leading-tight">
-                    <h3 className="font-bold text-lg text-gray-900">5. Photographers → Inkjet (Photo Printer)</h3>
-                    <p className="text-sm text-gray-600 mb-1">Superior color accuracy and resolution for professional prints.</p>
-                     <p className="text-xs font-semibold text-primary">Recommended: Canon PIXMA Photo, Epson Expression Photo</p>
+                <div className="bg-[#fafafa] text-[#111111] p-12">
+                    <h4 className="font-['Montserrat'] font-black text-xs text-[#B19777] mb-8 uppercase tracking-[0.25em]">Professional & Enterprise</h4>
+                    <p className="text-[10px] uppercase tracking-widest font-black text-gray-400 mb-6">Optimized for reliability, speed, and document volume.</p>
+                    <ul className="space-y-4 text-[10px] font-black uppercase tracking-widest list-none pl-0">
+                        <li className="flex items-center gap-3"><span className="w-8 h-[1px] bg-[#B19777]"></span> Brother HL Performance series</li>
+                        <li className="flex items-center gap-3"><span className="w-8 h-[1px] bg-[#B19777]"></span> HP Enterprise LaserJet Pro</li>
+                    </ul>
                 </div>
             </div>
 
-            {/* Final Verdict */}
-            <div className="bg-gray-900 text-white rounded-xl p-8 mb-12">
-                <h2 className="text-2xl font-bold mb-6 text-center">Final Verdict: Inkjet vs Laser (2026)</h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 className="font-bold text-xl mb-4 text-blue-300">Choose an Inkjet Printer if you:</h4>
-                         <ul className="space-y-3">
-                            <li className="flex items-center gap-2">✔ Print photos and color documents</li>
-                            <li className="flex items-center gap-2">✔ Need great color accuracy</li>
-                            <li className="flex items-center gap-2">✔ Prefer lower upfront cost</li>
-                            <li className="flex items-center gap-2">✔ Print occasionally</li>
-                        </ul>
-                    </div>
-                     <div>
-                        <h4 className="font-bold text-xl mb-4 text-green-300">Choose a Laser Printer if you:</h4>
-                         <ul className="space-y-3">
-                            <li className="flex items-center gap-2">✔ Need fast printing</li>
-                            <li className="flex items-center gap-2">✔ Print high volumes</li>
-                            <li className="flex items-center gap-2">✔ Want long-term savings</li>
-                            <li className="flex items-center gap-2">✔ Focus on text-based documents</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            {/* Conclusion */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Conclusion</h2>
-            <p className="mb-6">
-              Inkjet and laser printers both deliver excellent results, but they serve very different printing needs. Inkjet printers offer unbeatable photo quality and vibrant color printing, making them ideal for home users, students, and creative projects. Laser printers deliver speed, durability, and low running costs, making them perfect for businesses, remote workers, and anyone printing large volumes regularly.
-            </p>
-            <p className="mb-6">
-              By understanding print quality, cost per page, speed, and maintenance differences, you can confidently choose the best printer that offers long-lasting performance and value.
-            </p>
-
-            <div className="mt-12 text-center">
-                <Link to="/printers" className="inline-block bg-primary text-white font-bold py-3 px-8 rounded-full hover:bg-blue-800 transition-colors shadow-lg">
-                    Find Your Perfect Printer
+            <div className="mt-24 text-center">
+                <Link to="/printers" className="inline-block bg-[#111111] text-white text-[12px] font-black px-16 py-6 uppercase tracking-[0.3em] hover:bg-[#B19777] transition-all transform hover:-translate-y-2 shadow-2xl">
+                    Explore Luxury Hardware
                 </Link>
             </div>
 
@@ -301,3 +212,4 @@ const InkjetVsLaserGuide = () => {
 };
 
 export default InkjetVsLaserGuide;
+

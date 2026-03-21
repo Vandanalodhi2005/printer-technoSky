@@ -1,68 +1,153 @@
-.home-peace {
-    padding: 100px 20px;
-    background: linear-gradient(rgba(15, 61, 145, 0.9), rgba(15, 61, 145, 0.9)),
-        url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920') center/cover;
-    background-attachment: fixed;
-    color: #fff;
-    text-align: center;
+.home-peace-expansive {
+    padding: 220px 40px;
+    background: #ffffff;
+    overflow: hidden;
 }
 
-.peace-container {
-    max-width: 1000px;
+.peace-grid-elite {
+    max-width: 1400px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 120px;
+    align-items: center;
 }
 
-.peace-content h2 {
-    font-size: 42px;
-    font-weight: 800;
-    margin-bottom: 30px;
+.peace-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #111;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
 }
 
-.peace-content p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    opacity: 0.95;
+.massive-title-black {
+    font-family: 'Montserrat';
+    font-weight: 950;
+    font-size: 48px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+    color: #111;
 }
 
-.peace-actions {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
 
-.home-btn {
-    padding: 16px 32px;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.3s;
+.peace-body-text p {
+    font-family: 'Poppins';
     font-size: 16px;
+    line-height: 2.4;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 600px;
 }
 
-.home-btn.primary {
-    background: #fff;
-    color: #0f3d91;
+/* Actions */
+.peace-actions-elite {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
 }
 
-.home-btn.secondary {
-    border: 2px solid #fff;
+.elite-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 50px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.elite-btn.black {
+    background: #111;
     color: #fff;
 }
 
-.home-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+.elite-btn.black:hover {
+    background: #B19777;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(177, 151, 119, 0.3);
+}
+
+.elite-btn.outline-gold {
+    background: transparent;
+    border: 2px solid #B19777;
+    color: #111;
+}
+
+.elite-btn.outline-gold:hover {
+    background: #B19777;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(177, 151, 119, 0.3);
+}
+
+/* Visual Side */
+.peace-visual-side {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.peace-icon-box {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #fbfbfb;
+    position: relative;
+    transition: all 0.6s;
+}
+
+.peace-icon-box:hover {
+    border-color: #B19777;
+    background: #fff;
+    transform: rotate(2deg) scale(1.05);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.05);
+}
+
+.safety-label {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #B19777;
+}
+
+@media (max-width: 1200px) {
+    .peace-grid-elite { gap: 60px; }
+    .massive-title-black { font-size: 52px; }
+    .peace-icon-box { width: 280px; height: 280px; }
+}
+
+@media (max-width: 1024px) {
+    .peace-grid-elite {
+        grid-template-columns: 1fr;
+        gap: 80px;
+        text-align: center;
+    }
+    .peace-body-text p { margin-left: auto; margin-right: auto; }
+    .peace-actions-elite { justify-content: center; flex-direction: column; }
+    .peace-visual-side { order: -1; }
 }
 
 @media (max-width: 768px) {
-    .peace-content h2 {
-        font-size: 32px;
-    }
-
-    .peace-content p {
-        font-size: 17px;
-    }
+    .home-peace-expansive { padding: 100px 20px; }
+    .massive-title-black { font-size: 34px; }
 }

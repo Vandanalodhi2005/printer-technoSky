@@ -7,7 +7,7 @@ const CTA = () => {
         <div className="cta-container">
           <h2>Shop with Peace of Mind</h2>
           <p className="cta-description">
-            Whether you're printing school assignments, home documents, or business materials, Prints Carts makes it easy to find dependable printing essentials without complexity.
+            Whether you're printing school assignments, home documents, or business materials, Ink Kart LLC makes it easy to find dependable printing essentials without complexity.
           </p>
           <p className="cta-subdescription">
             Browse our collections, explore detailed product information, and enjoy a smooth, transparent, and user-friendly shopping experience.
@@ -121,5 +121,6 @@ const CTA = () => {
 };
 
 export default CTA;
+
 
 

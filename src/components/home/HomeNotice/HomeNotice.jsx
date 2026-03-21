@@ -6,7 +6,7 @@ const HomeNotice = () => {
         'Product availability, pricing, and specifications may change without prior notice.',
         'Delivery times vary based on location, courier service, and product availability.',
         'Manufacturer warranties apply to eligible products as provided by their respective brands.',
-        'Prints Carts provides retail services independently and does not represent or act as an authorized dealer of any manufacturer.'
+        'Ink Kart LLC provides retail services independently and does not represent or act as an authorized dealer of any manufacturer.'
     ];
 
     return (
@@ -29,3 +29,4 @@ const HomeNotice = () => {
 };
 
 export default HomeNotice;
+

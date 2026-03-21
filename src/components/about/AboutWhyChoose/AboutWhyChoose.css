@@ -1,54 +1,66 @@
 .why-choose {
-    margin-bottom: 80px;
-    animation: fadeInUp 0.6s ease-out both;
+    padding: 100px 0;
+    animation: fadeInUp 0.8s ease-out both;
+    background: #ffffff;
 }
 
 .why-choose h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #0f3d91;
-    margin: 0 0 24px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #111111;
+    margin: 0 0 60px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
 }
 
 .choose-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 32px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 0px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .choose-card {
     background: #fff;
-    padding: 32px 24px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    padding: 60px 40px;
+    border-radius: 0px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: center;
 }
 
 .choose-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
+    z-index: 10;
+    border-color: #B19777;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.1);
 }
 
 .choose-card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #0f3d91;
-    margin: 0 0 12px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #B19777;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 .choose-card p {
-    font-size: 15px;
-    color: #666;
-    line-height: 1.6;
+    font-size: 13px;
+    color: #555;
+    line-height: 2;
     margin: 0;
 }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);

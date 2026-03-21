@@ -11,7 +11,7 @@ const Hero = () => {
               Print Smart. Choose Better. Shop with Confidence.
             </h1>
             <p>
-              Find reliable printers, ink, toner, and printing essentials for home and office needs. At Prints Carts, we make it simple to explore genuine-quality products with clear information, smooth browsing, and a customer-first shopping experience.
+              Find reliable printers, ink, toner, and printing essentials for home and office needs. At Ink Kart LLC, we make it simple to explore genuine-quality products with clear information, smooth browsing, and a customer-first shopping experience.
             </p>
 
             <div className="hero-actions">
@@ -156,3 +156,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

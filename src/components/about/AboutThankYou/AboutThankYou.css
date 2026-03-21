@@ -1,24 +1,30 @@
 .thank-you {
     text-align: center;
-    padding: 60px 40px;
-    background: linear-gradient(135deg, #0f3d91, #0b2c66);
+    padding: 100px 40px;
+    background: #111111;
     color: #fff;
-    border-radius: 12px;
-    margin-bottom: 80px;
-    animation: fadeInUp 0.6s ease-out both;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    border: 1px solid #B19777;
+    animation: fadeInUp 1s ease-out both;
 }
 
 .thank-you h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 24px;
+    font-weight: 800;
+    color: #B19777;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .thank-you p {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.95);
-    line-height: 1.8;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 2;
     max-width: 800px;
     margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }

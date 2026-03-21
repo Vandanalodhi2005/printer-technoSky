@@ -15,7 +15,7 @@ const Accessibility = () => {
                         <p className="last-updated">Last Updated: January 26, 2026</p>
                         <p className="intro-text">
                             We're committed to making our website accessible and usable for everyone.
-                            Inclusivity and equal access are core values at Prints Carts.
+                            Inclusivity and equal access are core values at Ink Kart LLC.
                         </p>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const Accessibility = () => {
 
                         <section className="policy-section">
                             <h2>Accessibility Features</h2>
-                            <p>To support accessibility, Prints Carts includes:</p>
+                            <p>To support accessibility, Ink Kart LLC includes:</p>
 
                             <div className="feature-grid">
                                 <div className="feature-item">
@@ -165,7 +165,7 @@ const Accessibility = () => {
                             <div className="feature-grid">
                                 <div className="feature-item">
                                     <h4>📧 Email Support</h4>
-                                    <p><a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                                    <p><a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                                 </div>
                                 <div className="feature-item">
                                     <h4>📍 Mailing Address</h4>
@@ -195,9 +195,9 @@ const Accessibility = () => {
                         {/* Contact Section */}
                         <div className="contact-info-box">
                             <h3>Let's Work Together for Better Accessibility</h3>
-                            <p>📧 Email: <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                            <p>📧 Email: <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                             <p>📍 Address: 7181 Beacon Dr 15, Reno, NV 89506</p>
-                            <p>🌐 Website: <a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                            <p>🌐 Website: <a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                             <p>We're committed to providing all customers with a comfortable, inclusive, and user-friendly shopping experience.</p>
                         </div>
                     </div>
@@ -209,3 +209,5 @@ const Accessibility = () => {
 };
 
 export default Accessibility;
+
+

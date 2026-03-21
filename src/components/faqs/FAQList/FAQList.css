@@ -1,45 +1,53 @@
 .faqs-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 60px;
+    gap: 0px;
+    margin-bottom: 100px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .faq-item {
     background: #fff;
-    border: 2px solid #e0e0e0;
-    border-radius: 12px;
+    border: 1px solid #111111;
+    border-radius: 0px;
     overflow: hidden;
-    transition: all 0.3s ease;
-    animation: fadeInUp 0.5s ease-out both;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: fadeInUp 0.8s ease-out both;
     cursor: pointer;
+    margin-bottom: -1px;
 }
 
 .faq-item:hover {
-    border-color: #0f3d91;
-    box-shadow: 0 4px 12px rgba(15, 61, 145, 0.1);
-    transform: translateY(-2px);
+    border-color: #B19777;
+    z-index: 1;
 }
 
 .faq-item.open {
-    border-color: #0f3d91;
-    box-shadow: 0 4px 12px rgba(15, 61, 145, 0.15);
+    border-color: #B19777;
+    z-index: 2;
+    background: #fafafa;
 }
 
 .faq-question {
-    padding: 20px 24px;
+    padding: 32px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .faq-arrow {
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     flex-shrink: 0;
-    margin-left: 16px;
+    margin-left: 20px;
+    color: #B19777;
 }
 
 .faq-item.open .faq-arrow {
@@ -49,39 +57,42 @@
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-    padding: 0 24px;
+    transition: all 0.4s ease;
+    padding: 0 40px;
 }
 
 .faq-item.open .faq-answer {
     max-height: 500px;
-    padding: 0 24px 20px;
+    padding: 0 40px 40px;
 }
 
 .faq-answer p {
-    color: #666;
-    line-height: 1.8;
+    color: #555;
+    font-size: 14px;
+    line-height: 2;
     margin: 0;
     animation: fadeIn 0.4s ease-out 0.2s both;
 }
 
 .no-results {
     text-align: center;
-    padding: 60px 20px;
-    color: #666;
+    padding: 100px 20px;
+    color: #999;
 }
 
 .no-results p {
-    font-size: 18px;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -89,11 +100,6 @@
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

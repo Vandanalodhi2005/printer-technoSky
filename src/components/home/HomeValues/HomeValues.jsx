@@ -20,7 +20,7 @@ const HomeValues = () => {
         },
         {
             title: 'Independence',
-            description: 'Prints Carts is an independent retailer. We are not affiliated with or endorsed by any printer or technology manufacturer.',
+            description: 'Ink Kart LLC is an independent retailer. We are not affiliated with or endorsed by any printer or technology manufacturer.',
             details: 'All trademarks and brand names belong to their respective owners and are used for identification purposes only.',
             icon: '🗽'
         }
@@ -46,3 +46,4 @@ const HomeValues = () => {
 };
 
 export default HomeValues;
+

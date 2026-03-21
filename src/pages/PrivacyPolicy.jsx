@@ -75,11 +75,11 @@ const PrivacyPolicy = () => {
                                 </div>
                                 <div className="feature-item">
                                     <h4>📧 Email</h4>
-                                    <p><a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                                    <p><a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                                 </div>
                                 <div className="feature-item">
                                     <h4>🌐 Website</h4>
-                                    <p><a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                                    <p><a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                                 </div>
                             </div>
                             <p>We operate as an independent online retailer offering printers, ink, toner, and printing supplies.</p>
@@ -249,11 +249,11 @@ const PrivacyPolicy = () => {
                             </div>
 
                             <p className="policy-note">
-                                Prints Carts does not sell or share personal information under CCPA/CPRA definitions.
+                                Ink Kart LLC does not sell or share personal information under CCPA/CPRA definitions.
                             </p>
 
                             <h3>How to Exercise These Rights</h3>
-                            <p>Email us at <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                            <p>Email us at <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                             <p>We may request identity verification for your safety.</p>
                         </section>
 
@@ -281,9 +281,9 @@ const PrivacyPolicy = () => {
                         {/* Contact Section */}
                         <div className="contact-info-box">
                             <h3>Questions About Privacy?</h3>
-                            <p>📧 Email: <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                            <p>📧 Email: <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                             <p>📍 Address: 7181 Beacon Dr 15, Reno, NV 89506</p>
-                            <p>🌐 Website: <a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                            <p>🌐 Website: <a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                             <p>We will respond within a reasonable timeframe.</p>
                         </div>
                     </div>
@@ -295,3 +295,5 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
+
+

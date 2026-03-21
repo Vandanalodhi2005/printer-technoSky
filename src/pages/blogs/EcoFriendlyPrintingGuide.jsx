@@ -12,265 +12,154 @@ const EcoFriendlyPrintingGuide = () => {
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
 
-      <div className="flex-grow pt-8 pb-16">
+      <div className="flex-grow pt-16 pb-24">
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb / Back Link */}
-          <div className="mb-8">
-            <Link to="/blogs" className="text-sm font-medium text-gray-500 hover:text-primary transition-colors">
-              &larr; Back to Blog
+          <div className="mb-12">
+            <Link to="/blogs" className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 hover:text-[#B19777] transition-all flex items-center gap-2">
+              <span className="text-lg">←</span> Back to Selection
             </Link>
           </div>
 
           {/* Article Header */}
-          <header className="mb-10 pb-10 border-b border-gray-200">
-            <span className="inline-block bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded mb-4 uppercase tracking-wider">
-              Sustainability
+          <header className="mb-16 pb-16 border-b border-gray-100">
+            <span className="inline-block bg-[#111111] text-[#B19777] text-[10px] font-black px-4 py-2 mb-8 uppercase tracking-widest">
+              Sustainability Protocol
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Eco-Friendly Printing — How to Reduce Waste & Extend Printer Life (2026 Sustainability Guide)
+            <h1 className="font-['Montserrat'] text-3xl md:text-5xl font-black text-[#111111] mb-8 uppercase tracking-wider leading-tight">
+              Hardware Stewardship: The Ecological Optimization Guide (2026)
             </h1>
-            <div className="flex items-center text-gray-500 text-sm">
-              <span className="font-semibold text-gray-900 mr-2">By PrintsCarts Team</span>
-              <span className="mx-2">•</span>
+            <div className="flex items-center text-[10px] uppercase tracking-widest font-bold text-gray-400">
+              <span className="text-[#111111]">By Ink Kart LLC Team</span>
+              <span className="mx-4 text-[#B19777]">•</span>
               <span>February 11, 2026</span>
-              <span className="mx-2">•</span>
+              <span className="mx-4 text-[#B19777]">•</span>
               <span>10 min read</span>
             </div>
           </header>
 
           {/* Main Content */}
-          <div className="prose prose-lg prose-blue max-w-none text-gray-700">
-
+          <div className="prose prose-lg max-w-none text-gray-600">
+            
             {/* Introduction */}
-            <p className="lead text-xl text-gray-600 mb-8 font-light">
+            <p className="lead text-lg text-gray-500 mb-10 font-medium leading-relaxed italic">
               Eco-friendly printing is no longer just an environmental choice — it is a cost-saving, efficiency-boosting, and longevity-improving strategy for homes, small businesses, and large organizations. In 2026, as households and companies print more documents, photos, labels, and everyday materials, reducing waste and conserving resources has become a crucial part of modern printing practices.
             </p>
-            <p className="mb-6">
+            <p className="mb-6 leading-loose">
               Whether you're a student printing assignments, a home office user handling invoices, or a business managing large print volumes, sustainable printing helps you:
             </p>
-            <ul className="list-disc pl-6 space-y-2 mb-8 text-gray-700">
-              <li>Reduce paper consumption</li>
-              <li>Lower ink and toner usage</li>
-              <li>Extend your printer’s lifespan</li>
-              <li>Decrease long-term maintenance costs</li>
-              <li>Minimize environmental waste</li>
+            <ul className="list-none pl-0 space-y-4 text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-12">
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-[#B19777]"></span> Strategic Paper Consumption Reduction</li>
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-[#B19777]"></span> High-Fidelity Consumable Optimization</li>
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-[#B19777]"></span> Hardware lifecycle extension protocols</li>
+              <li className="flex items-center gap-4"><span className="w-2 h-2 bg-[#B19777]"></span> Maintenance Overhead minimization</li>
             </ul>
-            <p className="mb-8">
+            <p className="mb-12 leading-loose">
               This comprehensive guide outlines the best methods for eco-friendly printing, including hardware recommendations, ink/toner optimization, paper-saving techniques, and real-world sustainability practices every user can adopt.
             </p>
 
             {/* Why Eco-Friendly Printing Matters */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Why Eco-Friendly Printing Matters in 2026</h2>
-            <div className="bg-teal-50 border-l-4 border-teal-500 p-6 rounded-r-lg mb-8">
-              <p className="mb-4 text-gray-800">
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-16 mb-8 uppercase tracking-widest border-l-4 border-[#B19777] pl-6">The Sustainability Standard</h2>
+            <div className="bg-[#fafafa] p-10 mb-12 border border-gray-100">
+              <p className="mb-8 text-sm font-medium text-gray-500 uppercase tracking-wider leading-relaxed">
                 Modern printers are more efficient than ever, but printing waste remains high. Users often print excess pages, throw out cartridges prematurely, and ignore settings that minimize environmental impact.
               </p>
-              <ul className="list-decimal pl-6 space-y-2 text-gray-700">
-                <li><strong>Reduces Cartridge Waste:</strong> Billions of ink and toner cartridges end up in landfills annually.</li>
-                <li><strong>Cuts Paper Waste:</strong> Schools, offices, and home users often print unnecessary pages.</li>
-                <li><strong>Saves Energy:</strong> Modern printers use power-saving modes that extend hardware life.</li>
-                <li><strong>Extends Printer Life:</strong> Well-maintained printers last longer and require fewer repairs.</li>
-                <li><strong>Saves Money:</strong> Sustainable printing reduces operational costs by 40–70%.</li>
-              </ul>
-            </div>
-
-            {/* Section 1 */}
-            <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-8 border-b pb-4">Section 1 — Print Smartly: Reduce Ink, Toner & Paper Usage</h2>
-
-            <div className="mb-10">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
-                <span className="text-teal-600 mr-2">✔ 1.</span> Use Duplex (Two-Sided) Printing by Default
-              </h3>
-              <p className="text-gray-600 mb-2">
-                Duplex printing is one of the easiest ways to cut paper usage. It reduces paper consumption by 50% and ideally saves storage space.
-              </p>
-              <div className="bg-gray-50 p-4 rounded text-sm">
-                <strong>How to Enable:</strong>
-                <br />Windows: Printer Properties → Enable Duplex
-                <br />macOS: Print Dialog → Two-Sided Printing
+              <div className="grid md:grid-cols-2 gap-8 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                  <div className="flex gap-4 items-start"><span className="text-[#B19777]">01.</span> Resource conservation through precision ink deposition.</div>
+                  <div className="flex gap-4 items-start"><span className="text-[#B19777]">02.</span> Volumetric waste reduction in consumable housing.</div>
+                  <div className="flex gap-4 items-start"><span className="text-[#B19777]">03.</span> Thermal energy efficiency in high-volume output.</div>
+                  <div className="flex gap-4 items-start"><span className="text-[#B19777]">04.</span> Financial yield optimization via sustainable habits.</div>
               </div>
             </div>
 
-            <div className="mb-10">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
-                <span className="text-teal-600 mr-2">✔ 2.</span> Use Draft or Eco Mode for Everyday Printing
+            {/* Section 1 */}
+            <h2 className="font-['Montserrat'] text-3xl font-black text-[#111111] mt-24 mb-12 uppercase tracking-[0.2em] text-center">Efficiency Protocols</h2>
+            <div className="w-20 h-1 bg-[#B19777] mx-auto mb-16"></div>
+
+            <div className="mb-12 p-10 bg-white border border-gray-100">
+              <h3 className="font-['Montserrat'] text-lg font-black text-[#111111] mb-6 uppercase tracking-wider flex items-center gap-4">
+                <span className="text-[#B19777]">01.</span> Duplex Alignment Standards
               </h3>
-              <p className="text-gray-600 mb-2">Draft mode uses significantly less ink while maintaining readable text. Best for daily notes, internal documents, and homework drafts.</p>
+              <p className="text-sm font-medium text-gray-500 mb-6 leading-relaxed">Duplex printing reduces tactile volume by 50% and optimizes physical material archiving.</p>
+              <div className="bg-[#111111] p-6 text-[10px] font-black text-[#B19777] uppercase tracking-widest">
+                Action: Default Bluetooth & Devices → Printer Properties → Duplex Enabled.
+              </div>
             </div>
 
-            <div className="mb-10">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
-                <span className="text-teal-600 mr-2">✔ 3.</span> Use Grayscale When Color Is Not Needed
+            <div className="mb-12 p-10 bg-[#fafafa] border border-gray-100">
+              <h3 className="font-['Montserrat'] text-lg font-black text-[#111111] mb-6 uppercase tracking-wider flex items-center gap-4">
+                <span className="text-[#B19777]">02.</span> Typographic Consumable Efficiency
               </h3>
-              <p className="text-gray-600 mb-2">Color printing uses multiple ink cartridges simultaneously. Use Grayscale for contracts, forms, text documents, and receipts.</p>
+              <p className="text-sm font-medium text-gray-500 mb-6 leading-relaxed">Selecting fonts like Garamond or Ryman Eco reduces molecular ink deposition by up to 25% without compromising executive readability.</p>
             </div>
-
-            <div className="mb-10">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
-                <span className="text-teal-600 mr-2">✔ 4.</span> Print Only the Pages You Need
-              </h3>
-              <p className="text-gray-600 mb-2">Use Print Preview to avoid blank ending pages, unneeded images, and extra pages from formatting errors.</p>
-            </div>
-
-            <div className="mb-10">
-              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center">
-                <span className="text-teal-600 mr-2">✔ 5.</span> Use Eco-Optimized Fonts
-              </h3>
-              <p className="text-gray-600 mb-2">
-                Some fonts use less ink. Best choices include Garamond, Century Gothic, Calibri, Ryman Eco, and Ecofont. Avoid heavy fonts like Arial Black.
-              </p>
-            </div>
-
-
-            {/* Section 2 */}
-            <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-8 border-b pb-4">Section 2 — Paper Sustainability: Choosing the Right Options</h2>
-            <ul className="space-y-6">
-              <li className="flex gap-4">
-                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 font-bold">6</div>
-                 <div>
-                    <h4 className="font-bold text-gray-900">Use Recycled Paper</h4>
-                    <p className="text-gray-600 text-sm">Modern recycled paper offers bright whiteness, smooth finish, and low dust levels. Ideal for documents and everyday use.</p>
-                 </div>
-              </li>
-              <li className="flex gap-4">
-                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 font-bold">7</div>
-                 <div>
-                    <h4 className="font-bold text-gray-900">Choose FSC-Certified or Eco-Label Paper</h4>
-                    <p className="text-gray-600 text-sm">Look for FSC (Forest Stewardship Council), EcoLogo, or Blue Angel labels to ensure responsible sourcing.</p>
-                 </div>
-              </li>
-              <li className="flex gap-4">
-                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 font-bold">8</div>
-                 <div>
-                    <h4 className="font-bold text-gray-900">Reduce Margins & Font Sizes</h4>
-                    <p className="text-gray-600 text-sm">Shrinking margins to 0.5-inch and using size 10–11 font significantly reduces total printed pages.</p>
-                 </div>
-              </li>
-               <li className="flex gap-4">
-                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-teal-600 font-bold">9</div>
-                 <div>
-                    <h4 className="font-bold text-gray-900">Reuse Single-Sided Paper</h4>
-                    <p className="text-gray-600 text-sm">For internal notes or drafts, use the back of previously printed sheets.</p>
-                 </div>
-              </li>
-            </ul>
 
             {/* Section 3 */}
-            <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-8 border-b pb-4">Section 3 — Eco-Friendly Ink & Toner Practices</h2>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="p-6 bg-gray-50 rounded-lg">
-                    <h3 className="font-bold text-lg mb-2">10. Choose High-Yield Cartridges</h3>
-                    <p className="text-gray-600 text-sm">They print more pages, have a lower cost per page, and require fewer replacements, reducing plastic waste.</p>
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-16 mb-8 uppercase tracking-widest border-l-4 border-[#B19777] pl-6">Consumable Lifecycle</h2>
+            <div className="grid md:grid-cols-2 gap-0 mb-12 border border-gray-100 text-center">
+                <div className="p-10 border-r border-b border-gray-100">
+                    <h3 className="font-['Montserrat'] font-black text-[10px] text-[#B19777] mb-4 uppercase tracking-[0.2em]">03. Reservoir Shift</h3>
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Transition to tank-based architectures (EcoTank/SmartTank) to eliminate plastic cartridge waste.</p>
                 </div>
-                 <div className="p-6 bg-gray-50 rounded-lg">
-                    <h3 className="font-bold text-lg mb-2">11. Switch to Ink Tank Printers</h3>
-                    <p className="text-gray-600 text-sm">No cartridge waste, bottled ink lasts 2–3 years, and extremely low ink cost. Best for families and students.</p>
+                 <div className="p-10 border-b border-gray-100 bg-[#fafafa]">
+                    <h3 className="font-['Montserrat'] font-black text-[10px] text-[#111111] mb-4 uppercase tracking-[0.2em]">04. Yield Maximize</h3>
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Prioritize XL high-capacity reservoirs for superior financial and ecological yield metrics.</p>
                 </div>
-                 <div className="p-6 bg-gray-50 rounded-lg">
-                    <h3 className="font-bold text-lg mb-2">12. Recycle Cartridges</h3>
-                    <p className="text-gray-600 text-sm">Use manufacturer programs or local office supply stores. Never throw cartridges in the trash.</p>
+                 <div className="p-10 border-r border-gray-100 bg-[#fafafa]">
+                    <h3 className="font-['Montserrat'] font-black text-[10px] text-[#111111] mb-4 uppercase tracking-[0.2em]">05. Responsible End-of-Life</h3>
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Utilize artisan reclamation programs for zero-landfill consumable disposal.</p>
                 </div>
-                 <div className="p-6 bg-gray-50 rounded-lg">
-                    <h3 className="font-bold text-lg mb-2">13. Avoid Over-Cleaning</h3>
-                    <p className="text-gray-600 text-sm">Excessive cleaning cycles waste ink. Clean only when text is broken or colors fade.</p>
+                 <div className="p-10">
+                    <h3 className="font-['Montserrat'] font-black text-[10px] text-[#B19777] mb-4 uppercase tracking-[0.2em]">06. Cleaning Logic</h3>
+                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Execute nozzle maintenance only upon visual fidelity degradation to conserve propellant ink.</p>
                 </div>
             </div>
 
-            {/* Section 4 */}
-            <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-8 border-b pb-4">Section 4 — Eco-Friendly Printer Maintenance</h2>
-            <div className="space-y-4 mb-12">
-                 <p><strong className="text-gray-900">14. Keep Your Printer Clean:</strong> Dust buildup wastes ink and causes jams. Clean paper trays and vents.</p>
-                 <p><strong className="text-gray-900">15. Use Power-Saving Modes:</strong> Enable auto-sleep and auto-shutdown to save electricity.</p>
-                 <p><strong className="text-gray-900">16. Update Firmware:</strong> Updates improve power efficiency and stability.</p>
-            </div>
-
-            {/* Section 5 */}
-            <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-8 border-b pb-4">Section 5 — Sustainable Printing Habits</h2>
-            <ul className="list-disc pl-6 space-y-3 mb-12 text-gray-700">
-                <li><strong>Print Digitally When Possible:</strong> Use PDFs, e-signatures, and cloud storage instead of paper.</li>
-                <li><strong>Share One Printer:</strong> Use network sharing to reduce energy consumption and maintenance.</li>
-                <li><strong>Avoid Idle Periods:</strong> Ink drains when unused. Use printer weekly.</li>
-                <li><strong>Print in Batches:</strong> Reduces warm-up cycles and energy use.</li>
-            </ul>
-
-            {/* Section 6 */}
-            <div className="bg-teal-900 text-white p-8 rounded-lg mb-12">
-                <h2 className="text-2xl font-bold mb-6">Choosing the Most Eco-Friendly Printers in 2026</h2>
-                <div className="grid md:grid-cols-3 gap-6 text-white/90">
+            {/* Hardware Selection */}
+            <div className="bg-[#111111] p-12 mb-12">
+                <h2 className="font-['Montserrat'] text-2xl font-black text-white mb-10 uppercase tracking-widest text-center">Curated Sustainable Hardware</h2>
+                <div className="grid md:grid-cols-3 gap-8 text-center uppercase tracking-widest">
                     <div>
-                        <h3 className="font-bold text-teal-300 mb-2">Inkjet (Tank-Based)</h3>
-                        <p className="text-sm">Epson EcoTank, Canon MegaTank. Bottled ink lasts years, very low waste.</p>
+                        <h3 className="text-[#B19777] text-xs font-black mb-4">Precision Inkjet</h3>
+                        <p className="text-[10px] text-gray-500 font-bold leading-loose">Epson EcoTank Series | Canon MegaTank Solutions.</p>
                     </div>
                      <div>
-                        <h3 className="font-bold text-teal-300 mb-2">Laser Printers</h3>
-                        <p className="text-sm">Brother HL, HP LaserJet EcoSmart. Efficient toner prints thousands of pages.</p>
+                        <h3 className="text-[#B19777] text-xs font-black mb-4">Executive Laser</h3>
+                        <p className="text-[10px] text-gray-500 font-bold leading-loose">Brother Monochrome HL | HP LaserJet EcoSmart.</p>
                     </div>
                      <div>
-                        <h3 className="font-bold text-teal-300 mb-2">Hybrid Models</h3>
-                        <p className="text-sm">Combine low power use with tank systems and cloud printing.</p>
+                        <h3 className="text-[#B19777] text-xs font-black mb-4">Hybrid Deployment</h3>
+                        <p className="text-[10px] text-gray-500 font-bold leading-loose">Cloud-integrated tank architectures with automated duplexing.</p>
                     </div>
                 </div>
             </div>
 
-             {/* Section 7 */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">How to Dispose of Printers Responsibly</h2>
-            <p className="mb-4 text-gray-600">Printers contain plastic, electronics, circuit boards, and hazardous components. Never throw them in the trash.</p>
-            <ul className="list-disc pl-6 space-y-2 mb-8 text-gray-700">
-                <li>E-waste recycling centers</li>
-                <li>Manufacturer take-back programs</li>
-                <li>Local municipal recycling drives</li>
-            </ul>
-
-            {/* Section 8: Myths */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Eco-Friendly Printing Myths (Debunked)</h2>
-            <div className="grid md:grid-cols-2 gap-4 mb-12">
-                <div className="bg-red-50 p-4 rounded border-l-4 border-red-400">
-                    <p className="font-bold text-red-800">❌ Myth 1: Draft mode ruins quality</p>
-                    <p className="text-sm text-red-700">Wrong. It works perfectly for text documents.</p>
-                </div>
-                <div className="bg-red-50 p-4 rounded border-l-4 border-red-400">
-                    <p className="font-bold text-red-800">❌ Myth 2: Laser printers aren't eco-friendly</p>
-                    <p className="text-sm text-red-700">Laser printers produce less waste and lower cp.</p>
-                </div>
-                 <div className="bg-red-50 p-4 rounded border-l-4 border-red-400">
-                    <p className="font-bold text-red-800">❌ Myth 3: Recycling is hard</p>
-                    <p className="text-sm text-red-700">Most brands offer free drop-off programs.</p>
-                </div>
-                 <div className="bg-red-50 p-4 rounded border-l-4 border-red-400">
-                    <p className="font-bold text-red-800">❌ Myth 4: Reduces productivity</p>
-                    <p className="text-sm text-red-700">Smart settings save time and resources.</p>
-                </div>
-            </div>
-
-            {/* Section 9: Savings */}
-            <div className="bg-gray-100 p-8 rounded-lg mb-12 text-center">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">How Much Can You Save?</h2>
-                <div className="grid md:grid-cols-2 gap-8">
+            {/* Savings Analysis */}
+            <div className="bg-[#fafafa] p-12 mb-20 border border-gray-100">
+                <h2 className="font-['Montserrat'] text-xl font-black text-[#111111] mb-12 uppercase tracking-widest text-center">Fiscal Yield Analysis</h2>
+                <div className="grid md:grid-cols-2 gap-12 text-center uppercase tracking-widest">
                     <div>
-                        <h3 className="font-bold text-lg mb-2">Home User</h3>
-                        <p className="text-green-600 text-3xl font-bold mb-2">25–50%</p>
-                        <p className="text-sm text-gray-600">Savings on paper, ink, and energy annually.</p>
+                        <h3 className="text-[#B19777] text-[10px] font-black mb-2">Residential Metrics</h3>
+                        <p className="text-[#111111] text-4xl font-black mb-4">25–50%</p>
+                        <p className="text-[10px] text-gray-400 font-bold">Annual resource savings overhead.</p>
                     </div>
                      <div>
-                        <h3 className="font-bold text-lg mb-2">Small Business</h3>
-                        <p className="text-green-600 text-3xl font-bold mb-2">30–70%</p>
-                        <p className="text-sm text-gray-600">Combined total operational savings.</p>
+                        <h3 className="text-[#B19777] text-[10px] font-black mb-2">Corporate Metrics</h3>
+                        <p className="text-[#111111] text-4xl font-black mb-4">30–70%</p>
+                        <p className="text-[10px] text-gray-400 font-bold">Total operational yield optimization.</p>
                     </div>
                 </div>
             </div>
 
             {/* Conclusion */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Conclusion</h2>
-            <p className="mb-6">
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-8 mb-6 uppercase tracking-widest border-l-4 border-[#B19777] pl-6">Executive Summary</h2>
+            <p className="mb-12 leading-loose">
               Eco-friendly printing isn’t just about helping the environment—it’s about lowering long-term printing costs, improving efficiency, and extending the life of your device. By using duplex printing, choosing sustainable paper, upgrading to tank-based printers, and following smart maintenance habits, you can dramatically reduce waste while keeping your printing fast, reliable, and cost-effective.
             </p>
-            <p className="mb-6">
-              Whether you're a student, home user, or business owner, adopting the practices in this guide will ensure you save money, protect the environment, and get the maximum life out of your printer.
-            </p>
 
-            <div className="mt-12 text-center">
-                <Link to="/printers" className="inline-block border-2 border-teal-500 text-teal-600 font-bold py-3 px-8 rounded-full hover:bg-teal-500 hover:text-white transition-colors">
-                    Shop Eco-Friendly Printers
+            <div className="mt-24 text-center">
+                <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.4em] mb-12">Elevate your hardware standards today</p>
+                <Link to="/printers" className="inline-block border-2 border-[#111111] text-[#111111] text-[12px] font-black px-16 py-6 uppercase tracking-[0.3em] hover:bg-[#111111] hover:text-white transition-all transform hover:-translate-y-2">
+                    Source Sustainable Hardware
                 </Link>
             </div>
 
@@ -284,3 +173,4 @@ const EcoFriendlyPrintingGuide = () => {
 };
 
 export default EcoFriendlyPrintingGuide;
+

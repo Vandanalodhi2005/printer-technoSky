@@ -1,7 +1,7 @@
 .home-notice {
-    padding: 60px 20px;
-    background: #f8f9fa;
-    border-top: 1px solid #eef2f6;
+    padding: 100px 20px;
+    background: #ffffff;
+    border-top: 1px solid #f0f0f0;
 }
 
 .notice-container {
@@ -10,11 +10,14 @@
 }
 
 .home-notice .section-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 60px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 .notice-list {
@@ -23,24 +26,31 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 32px;
 }
 
 .notice-list li {
     display: flex;
-    gap: 12px;
+    gap: 20px;
     align-items: flex-start;
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
+    font-size: 13px;
+    color: #777;
+    line-height: 1.8;
+    background: #fafafa;
+    padding: 32px;
+    border-radius: 0px;
+    border: 1px solid #eee;
+    transition: all 0.4s ease;
+}
+
+.notice-list li:hover {
     background: #fff;
-    padding: 16px;
-    border-radius: 10px;
-    border: 1px solid #eef2f6;
+    border-color: #B19777;
+    transform: translateY(-4px);
 }
 
 .notice-list li svg {
-    color: #0f3d91;
+    color: #B19777;
     flex-shrink: 0;
     margin-top: 2px;
 }

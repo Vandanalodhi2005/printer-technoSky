@@ -1,53 +1,61 @@
 .transparency-commitment {
-    margin-bottom: 80px;
-    animation: fadeInUp 0.6s ease-out both;
+    padding: 100px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out both;
 }
 
 .transparency-commitment h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #0f3d91;
-    margin: 0 0 24px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #111111;
+    margin: 0 0 32px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 .transparency-commitment p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #666;
-    margin: 0 0 20px 0;
+    font-size: 15px;
+    line-height: 2;
+    color: #555;
+    margin: 0 0 24px 0;
 }
 
 .transparency-list {
     list-style: none;
     padding: 0;
-    margin: 24px 0;
+    margin: 32px 0;
 }
 
 .transparency-list li {
-    padding: 12px 0;
+    padding: 16px 0;
     padding-left: 32px;
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
+    color: #555;
     position: relative;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .transparency-list li::before {
-    content: '✓';
+    content: '';
     position: absolute;
     left: 0;
-    color: #10b981;
-    font-weight: bold;
-    font-size: 20px;
+    top: 24px;
+    width: 20px;
+    height: 1px;
+    background: #B19777;
 }
 
 .trademark-notice {
-    padding: 20px;
-    background: #f8f9fa;
-    border-left: 4px solid #0f3d91;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #666;
+    padding: 32px;
+    background: #111111;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 0px;
+    border-left: 2px solid #B19777;
+    font-size: 12px;
     line-height: 1.8;
-    margin-top: 24px;
+    margin-top: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }

@@ -16,7 +16,7 @@ const ContactInfo = () => {
                         </div>
                         <div className="info-content">
                             <h3>Mailing Address</h3>
-                            <p>Prints Carts<br />7181 Beacon Dr 15<br />Reno, NV 89506<br />United States</p>
+                            <p>Ink Kart LLC<br />7181 Beacon Dr 15<br />Reno, NV 89506<br />United States</p>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@ const ContactInfo = () => {
                         </div>
                         <div className="info-content">
                             <h3>Email Support</h3>
-                            <p>support@printscarts.com</p>
+                            <p>support@inkkartllc.com</p>
                         </div>
                     </div>
 
@@ -43,7 +43,7 @@ const ContactInfo = () => {
                         </div>
                         <div className="info-content">
                             <h3>Website</h3>
-                            <p>www.printscarts.com</p>
+                            <p>www.inkkartllc.com</p>
                         </div>
                     </div>
                 </div>
@@ -77,3 +77,5 @@ const ContactInfo = () => {
 };
 
 export default ContactInfo;
+
+

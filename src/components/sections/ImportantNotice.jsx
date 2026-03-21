@@ -15,7 +15,7 @@ const ImportantNotice = () => {
               <strong>Manufacturer warranties apply to eligible products as provided by their respective brands.</strong>
             </li>
             <li>
-              <strong>Prints Carts provides retail services independently and does not represent or act as an authorized dealer of any manufacturer.</strong>
+              <strong>Ink Kart LLC provides retail services independently and does not represent or act as an authorized dealer of any manufacturer.</strong>
             </li>
           </ul>
         </div>
@@ -88,4 +88,5 @@ const ImportantNotice = () => {
 };
 
 export default ImportantNotice;
+
 

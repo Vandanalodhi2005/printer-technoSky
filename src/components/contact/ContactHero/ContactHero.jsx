@@ -5,10 +5,10 @@ const ContactHero = () => {
     return (
         <section className="contact-hero">
             <div className="contact-hero-content">
-                <h1>Contact Us – Prints Carts</h1>
+                <h1>Contact Us – Ink Kart LLC</h1>
                 <p>
                     We’re here to assist you with product questions, order updates, and general shopping inquiries.
-                    At Prints Carts, we believe in clear communication and a smooth customer experience.
+                    At Ink Kart LLC, we believe in clear communication and a smooth customer experience.
                 </p>
             </div>
         </section>
@@ -16,3 +16,4 @@ const ContactHero = () => {
 };
 
 export default ContactHero;
+

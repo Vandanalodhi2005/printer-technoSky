@@ -14,7 +14,7 @@ import {
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { logout } from '../../../redux/actions/userActions';
-const logo = "/PrintsCartslogo.png";
+const logo = "/Ink Kart LLClogo.png";
 
 const AdminSidebar = ({ isOpen, setIsOpen }) => {
     const dispatch = useDispatch();
@@ -98,3 +98,4 @@ const AdminSidebar = ({ isOpen, setIsOpen }) => {
 };
 
 export default AdminSidebar;
+

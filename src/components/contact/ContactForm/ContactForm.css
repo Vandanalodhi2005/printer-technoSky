@@ -1,22 +1,26 @@
 .contact-form-card {
     background: #fff;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eee;
+    padding: 60px;
+    border-radius: 0px;
+    border: 1px solid #111111;
+    transition: all 0.4s ease;
 }
 
 .contact-form-card h2 {
-    font-size: 28px;
-    color: #0f3d91;
-    margin-bottom: 30px;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
 }
 
 .contact-form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: 32px;
 }
 
 .full-width {
@@ -26,82 +30,100 @@
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 .form-group label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    padding: 14px 18px;
-    border: 2px solid #eef2f6;
-    border-radius: 10px;
-    font-size: 15px;
+    padding: 18px 24px;
+    border: 1px solid #eeeeee;
+    border-radius: 0px;
+    font-size: 14px;
     font-family: inherit;
     outline: none;
-    transition: all 0.3s ease;
-    background: #fcfdfe;
+    transition: all 0.4s ease;
+    background: #fafafa;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #0f3d91;
+    border-color: #B19777;
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(15, 61, 145, 0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .form-group textarea {
     resize: vertical;
-    min-height: 150px;
+    min-height: 180px;
 }
 
 .submit-button {
-    padding: 16px 32px;
-    background: #0f3d91;
+    padding: 20px 40px;
+    background: #111111;
     color: #fff;
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 700;
+    border-radius: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 16px;
+    margin-top: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 100%;
 }
 
 .submit-button:hover:not(:disabled) {
-    background: #0b2c66;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(15, 61, 145, 0.2);
+    background: #B19777;
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(177, 151, 119, 0.3);
 }
 
 .submit-button:disabled {
-    opacity: 0.7;
+    opacity: 0.5;
     cursor: not-allowed;
 }
 
 .success-box {
-    background: #ecfdf5;
-    border: 1px solid #10b981;
-    padding: 24px;
-    border-radius: 12px;
-    color: #065f46;
+    background: #111111;
+    border: 1px solid #B19777;
+    padding: 40px;
+    border-radius: 0px;
+    color: #fff;
     text-align: center;
-    animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.8s ease-out;
 }
 
 .success-box h3 {
-    margin-bottom: 8px;
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #B19777;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.success-box p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
 }
 
 @media (max-width: 640px) {
@@ -110,16 +132,15 @@
     }
 
     .contact-form-card {
-        padding: 24px;
+        padding: 32px 24px;
     }
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);

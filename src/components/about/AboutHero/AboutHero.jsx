@@ -4,10 +4,10 @@ import './AboutHero.css';
 const AboutHero = () => {
     return (
         <div className="about-hero">
-            <h1 className="page-title">About Us – Prints Carts</h1>
+            <h1 className="page-title">About Us – Ink Kart LLC</h1>
             <h2 className="hero-subtitle">Your Reliable Destination for Printers & Printing Essentials</h2>
             <p className="hero-description">
-                Prints Carts is an independent online retailer offering a curated selection of printers,
+                Ink Kart LLC is an independent online retailer offering a curated selection of printers,
                 ink cartridges, toner, and everyday printing supplies. Our mission is to make shopping
                 for printing products simple, clear, and stress-free for individuals, homes, and small businesses.
             </p>
@@ -21,3 +21,4 @@ const AboutHero = () => {
 };
 
 export default AboutHero;
+

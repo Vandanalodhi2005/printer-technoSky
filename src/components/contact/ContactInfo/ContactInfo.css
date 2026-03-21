@@ -1,61 +1,67 @@
 .contact-info-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 0px;
 }
 
 .info-card {
     background: #fff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eee;
+    padding: 60px 48px;
+    border-radius: 0px;
+    border: 1px solid #111111;
+    margin-bottom: -1px;
 }
 
 .info-card h2 {
-    font-size: 24px;
-    color: #0f3d91;
-    margin-bottom: 24px;
-    font-weight: 700;
-    border-bottom: 2px solid #f0f4f8;
-    padding-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #B19777;
 }
 
 .info-items {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
 }
 
 .info-item {
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    gap: 24px;
+    align-items: center;
 }
 
 .info-icon {
-    width: 48px;
-    height: 48px;
-    background: #f0f4f8;
-    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    background: #111111;
+    border-radius: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0f3d91;
+    color: #B19777;
     flex-shrink: 0;
 }
 
 .info-content h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 4px;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 .info-content p {
     color: #666;
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.8;
 }
 
 .help-list {
@@ -64,47 +70,55 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
+    gap: 20px;
 }
 
 .help-list li {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    color: #444;
+    gap: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .help-list li::before {
-    content: '✓';
-    color: #10b981;
-    font-weight: bold;
+    content: '';
+    width: 12px;
+    height: 1px;
+    background: #B19777;
 }
 
 .response-status {
-    background: #fff7ed;
-    border: 1px solid #ffedd5;
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 12px;
+    background: #111111;
+    border: none;
+    padding: 32px;
+    border-radius: 0px;
+    margin-top: 24px;
 }
 
 .response-status h3 {
-    font-size: 16px;
-    color: #c2410c;
-    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #B19777;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 .response-status p {
-    font-size: 14px;
-    color: #9a3412;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
 }
 
 @media (max-width: 768px) {
     .info-card {
-        padding: 20px;
+        padding: 40px 24px;
     }
 }

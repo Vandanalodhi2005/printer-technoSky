@@ -4,21 +4,38 @@ import './HomePeaceOfMind.css';
 
 const HomePeaceOfMind = () => {
     return (
-        <section className="home-peace">
-            <div className="peace-container">
-                <div className="peace-content">
-                    <h2>Shop with Peace of Mind</h2>
-                    <p>
-                        Whether you're printing school assignments, home documents, or business materials,
-                        Prints Carts makes it easy to find dependable printing essentials without complexity.
-                    </p>
-                    <p>
-                        Browse our collections, explore detailed product information, and enjoy a smooth,
-                        transparent, and user-friendly shopping experience.
-                    </p>
-                    <div className="peace-actions">
-                        <Link to="/printers" className="home-btn primary">Browse Printers</Link>
-                        <Link to="/ink-toner" className="home-btn secondary">Shop Ink & Toner</Link>
+        <section className="home-peace-expansive">
+            <div className="peace-grid-elite">
+                <div className="peace-text-side reveal-left">
+                    <span className="peace-badge">Consumer Confidence</span>
+                    <h2 className="massive-title-black">
+                        Shop with <br />
+                        <span className="text-[#B19777]">Peace of Mind.</span>
+                    </h2>
+                    <div className="peace-body-text">
+                        <p>
+                            Whether you're printing school assignments, home documents, or business materials, 
+                            Ink Kart LLC makes it easy to find dependable printing essentials without complexity.
+                        </p>
+                    </div>
+
+                    <div className="peace-actions-elite">
+                        <Link to="/printers" className="elite-btn black">
+                            <span>Browse Printers</span>
+                            <div className="btn-bg"></div>
+                        </Link>
+                        <Link to="/ink-toner" className="elite-btn outline-gold">
+                             <span>Shop Ink & Toner</span>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="peace-visual-side reveal-zoom">
+                    <div className="peace-icon-box">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#B19777" strokeWidth="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <span className="safety-label">SECURE INFRASTRUCTURE</span>
                     </div>
                 </div>
             </div>

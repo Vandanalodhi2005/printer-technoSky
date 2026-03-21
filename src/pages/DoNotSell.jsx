@@ -68,7 +68,7 @@ const DoNotSell = () => {
                     <div className="policy-content-card">
                         <section className="policy-section">
                             <h2>We Do NOT Sell or Share Personal Information</h2>
-                            <p>Prints Carts does not sell, share, or exchange personal information for advertising, remarketing,
+                            <p>Ink Kart LLC does not sell, share, or exchange personal information for advertising, remarketing,
                                 or commercial data-sharing purposes as defined under CCPA/CPRA.</p>
 
                             <div className="feature-grid">
@@ -135,7 +135,7 @@ const DoNotSell = () => {
                             <div className="feature-grid">
                                 <div className="feature-item">
                                     <h4>📧 Email Request</h4>
-                                    <p><a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                                    <p><a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                                 </div>
                                 <div className="feature-item">
                                     <h4>📬 Mail Request</h4>
@@ -250,9 +250,9 @@ const DoNotSell = () => {
                         {/* Contact Section */}
                         <div className="contact-info-box">
                             <h3>Questions About Your Privacy Rights?</h3>
-                            <p>📧 Email: <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                            <p>📧 Email: <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                             <p>📍 Address: 7181 Beacon Dr 15, Reno, NV 89506</p>
-                            <p>🌐 Website: <a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                            <p>🌐 Website: <a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                             <p>We're committed to responding within a reasonable timeframe.</p>
                         </div>
                     </div>
@@ -264,3 +264,5 @@ const DoNotSell = () => {
 };
 
 export default DoNotSell;
+
+

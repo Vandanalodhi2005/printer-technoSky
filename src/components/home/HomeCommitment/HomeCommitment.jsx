@@ -3,32 +3,36 @@ import './HomeCommitment.css';
 
 const HomeCommitment = () => {
     return (
-        <section className="home-commitment">
-            <div className="commitment-container">
-                <div className="commitment-content">
-                    <h2 className="section-title">Our Commitment to You</h2>
-                    <p>
-                        At Prints Carts, we believe in honest communication, transparent product listings,
-                        and human-friendly customer service. We aim to provide a helpful experience
-                        where customers feel informed, supported, and confident in their purchases.
-                    </p>
-                    <p>
-                        We continuously improve our platform to make browsing, comparing, and
-                        purchasing printing essentials more convenient.
-                    </p>
+        <section className="home-commitment-dark">
+            <div className="commitment-elite-content">
+                <div className="commitment-main-text reveal-left">
+                    <span className="elite-badge-gold">Operational Excellence</span>
+                    <h2 className="title-massive">Our Commitment <br /> <span className="text-[#B19777]">To You.</span></h2>
+                    
+                    <div className="commitment-paragraphs">
+                        <p>
+                            At Ink Kart LLC, we believe in honest communication, transparent product listings, 
+                            and human-friendly customer service. We aim to provide a helpful experience 
+                            where customers feel informed, supported, and confident in their purchases.
+                        </p>
+                    </div>
                 </div>
-                <div className="commitment-stats">
-                    <div className="stat-item">
-                        <span className="stat-value">100%</span>
-                        <span className="stat-label">Transparent</span>
+
+                <div className="commitment-stats-grid reveal-right">
+                    <div className="stat-card-technical">
+                        <div className="stat-line"></div>
+                        <span className="stat-val">100%</span>
+                        <span className="stat-desc">Absolute Transparency</span>
                     </div>
-                    <div className="stat-item">
-                        <span className="stat-value">24/7</span>
-                        <span className="stat-label">Secure Shop</span>
+                    <div className="stat-card-technical">
+                        <div className="stat-line"></div>
+                        <span className="stat-val">24/7</span>
+                        <span className="stat-desc">Secure Infrastructure</span>
                     </div>
-                    <div className="stat-item">
-                        <span className="stat-value">Fast</span>
-                        <span className="stat-label">Delivery</span>
+                    <div className="stat-card-technical">
+                        <div className="stat-line"></div>
+                        <span className="stat-val">RAPID</span>
+                        <span className="stat-desc">Global Logistics</span>
                     </div>
                 </div>
             </div>

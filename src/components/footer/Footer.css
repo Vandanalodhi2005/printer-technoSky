@@ -1,22 +1,22 @@
-/* Enhanced Footer Styles */
+/* Enhanced Footer Styles - Aashi Faucets Inspired */
 
 .footer-enhanced {
-    background: linear-gradient(135deg, #0f3d91, #0b2c66);
-    color: #fff;
-    padding: 60px 20px 20px;
-    border-top: 4px solid #4a90e2;
+    background: #111111;
+    color: #ffffff;
+    padding: 80px 20px 40px;
+    border-top: 5px solid #B19777;
 }
 
 .footer-container {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 60px;
+    margin-bottom: 60px;
 }
 
 /* Footer Sections */
@@ -24,34 +24,41 @@
     animation: fadeInUp 0.6s ease-out;
 }
 
-.footer-heading {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 0 16px 0;
-    color: #fff;
-}
-
 .footer-description {
-    font-size: 15px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #999999;
+    margin: 20px 0 30px 0;
     max-width: 350px;
 }
 
 .footer-copyright {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
+    font-size: 12px;
+    color: #666666;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .footer-section-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 0 20px 0;
-    color: #fff;
-    padding-bottom: 10px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: #B19777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.footer-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #B19777;
 }
 
 /* Footer Links */
@@ -62,49 +69,37 @@
 }
 
 .footer-links li {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .footer-links a {
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    color: #cccccc;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition);
     display: inline-block;
-    position: relative;
-}
-
-.footer-links a::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #4a90e2;
-    transition: width 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .footer-links a:hover {
-    color: #fff;
-    transform: translateX(4px);
-}
-
-.footer-links a:hover::before {
-    width: 100%;
+    color: #B19777;
+    transform: translateX(5px);
 }
 
 /* Footer Bottom */
 .footer-bottom {
     text-align: center;
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 40px;
+    border-top: 1px solid #222;
 }
 
 .footer-bottom p {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    color: #555555;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Animations */
@@ -124,29 +119,21 @@
 @media (max-width: 1024px) {
     .footer-content {
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 40px;
     }
 }
 
 @media (max-width: 768px) {
     .footer-enhanced {
-        padding: 40px 20px 20px;
+        padding: 60px 20px 30px;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 40px;
     }
 
     .footer-description {
         max-width: 100%;
-    }
-
-    .footer-heading {
-        font-size: 24px;
-    }
-
-    .footer-section-title {
-        font-size: 16px;
     }
 }

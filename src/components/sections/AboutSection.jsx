@@ -4,10 +4,10 @@ const AboutSection = () => {
       <section className="about-section">
         <div className="about-container">
           <div className="about-content">
-            <h2>About Prints Carts</h2>
+            <h2>About Ink Kart LLC</h2>
             <h3>Your Trusted Online Destination for Printing Essentials</h3>
             <p>
-              Prints Carts is an independent online retail platform offering a broad range of printers, genuine-quality ink and toner cartridges, and essential printing supplies. We focus on accuracy, transparency, and customer satisfaction—helping you choose the right products with confidence.
+              Ink Kart LLC is an independent online retail platform offering a broad range of printers, genuine-quality ink and toner cartridges, and essential printing supplies. We focus on accuracy, transparency, and customer satisfaction—helping you choose the right products with confidence.
             </p>
             <p>
               Our goal is to make everyday printing easier for homes, small offices, students, and businesses. Whether you're upgrading your printer or restocking supplies, we provide a straightforward shopping experience designed around clarity, trust, and convenience.
@@ -124,5 +124,6 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
 
 

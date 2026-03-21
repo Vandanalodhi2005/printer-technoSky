@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
 import FAQHero from '../components/faqs/FAQHero/FAQHero';
@@ -6,9 +6,12 @@ import FAQSearch from '../components/faqs/FAQSearch/FAQSearch';
 import FAQTabs from '../components/faqs/FAQTabs/FAQTabs';
 import FAQList from '../components/faqs/FAQList/FAQList';
 import FAQContact from '../components/faqs/FAQContact/FAQContact';
-import '../styles/pages.css';
 
 const FAQs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [activeTab, setActiveTab] = useState('products');
   const [searchQuery, setSearchQuery] = useState('');
   const [openItems, setOpenItems] = useState({});
@@ -26,7 +29,7 @@ const FAQs = () => {
 
   const faqData = {
     products: [
-      { id: 'p1', question: '1. What types of products does Prints Carts offer?', answer: 'We offer a wide selection of printers, ink cartridges, toner cartridges, photo paper, and everyday printing supplies for home and office needs.' },
+      { id: 'p1', question: '1. What types of products does Ink Kart LLC offer?', answer: 'We offer a wide selection of printers, ink cartridges, toner cartridges, photo paper, and everyday printing supplies for home and office needs.' },
       { id: 'p2', question: '2. How do I know if a cartridge is compatible with my printer?', answer: 'Each product page includes compatibility details based on manufacturer information. You can also check your printer model on the product label or user manual before making a purchase.' },
       { id: 'p3', question: '3. Are the printers wireless or mobile-printing ready?', answer: 'Many modern printers include Wi-Fi and mobile-printing features. Compatibility depends on the specific model. Product descriptions will list any available wireless capabilities.' },
       { id: 'p4', question: '4. What is page yield and why does it vary?', answer: 'Page yield refers to the estimated number of pages a cartridge may print based on standardized testing. Actual results can vary depending on the type of documents printed, settings, and usage patterns.' },
@@ -52,7 +55,7 @@ const FAQs = () => {
       { id: 'a2', question: '16. How is my personal information protected?', answer: 'We use industry-standard security practices to help protect your information. Details are available in our Privacy Policy.' }
     ],
     ownership: [
-      { id: 'w1', question: '17. Is Prints Carts affiliated with any printer brands?', answer: 'No. Prints Carts is an independent online retailer. All trademarks, logos, and product names belong to their respective owners and are used for identification purposes only.' },
+      { id: 'w1', question: '17. Is Ink Kart LLC affiliated with any printer brands?', answer: 'No. Ink Kart LLC is an independent online retailer. All trademarks, logos, and product names belong to their respective owners and are used for identification purposes only.' },
       { id: 'w2', question: '18. Do products come with a manufacturer warranty?', answer: 'Eligible products include standard manufacturer warranties as provided by the respective brands. Warranty terms vary by brand and product.' }
     ],
     support: [
@@ -84,19 +87,90 @@ const FAQs = () => {
     : (faqData[activeTab] || []);
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
-      <div className="faqs-page">
-        <div className="faqs-container">
-          <FAQHero />
-          <FAQSearch searchQuery={searchQuery} setSearchQuery={handleSearchChange} />
-          <FAQTabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
-          <FAQList faqs={filteredFaqs} openItems={openItems} toggleItem={toggleItem} />
-          <FAQContact />
-        </div>
-      </div>
+      
+      <main className="flex-grow">
+          {/* FAQ Hero Section (Black & Gold) */}
+          <div className="bg-[#111111] py-32 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')]"></div>
+            <div className="container mx-auto px-4 z-10 relative">
+                <FAQHero />
+            </div>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 py-24">
+            <div className="mb-20">
+                <FAQSearch searchQuery={searchQuery} setSearchQuery={handleSearchChange} />
+            </div>
+            
+            <div className="mb-16 overflow-x-auto no-scrollbar">
+                <FAQTabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+                <FAQList faqs={filteredFaqs} openItems={openItems} toggleItem={toggleItem} />
+            </div>
+          </div>
+
+          {/* Contact Support Section (Premium Callout) */}
+          <div className="bg-[#111111] py -32 border-t-4 border-[#B19777]">
+             <div className="container mx-auto px-4">
+                <FAQContact />
+             </div>
+          </div>
+      </main>
+
       <Footer />
-    </>
+
+      <style>{`
+        .faq-hero {
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .search-bar {
+            margin-bottom: 0 !important;
+        }
+        .tabs-container {
+            margin-bottom: 0 !important;
+        }
+        .faq-question {
+            font-family: 'Montserrat' !important;
+            font-weight: 900 !important;
+            color: #111111 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.15em !important;
+            font-size: 13px !important;
+        }
+        .faq-item.open .faq-question {
+            color: #B19777 !important;
+        }
+        .contact-section {
+            margin-top: 0 !important;
+            padding: 100px 0 !important;
+            background: transparent !important;
+        }
+        .contact-section h2 {
+            color: #ffffff !important;
+            font-family: 'Montserrat' !important;
+            font-weight: 900 !important;
+            font-size: 32px !important;
+            letter-spacing: 0.25em !important;
+        }
+        .contact-item {
+            background: #1a1a1a !important;
+            border-color: #333 !important;
+            color: #fff !important;
+        }
+        .contact-item span {
+            color: #999 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.15em !important;
+            font-size: 11px !important;
+            font-weight: 700 !important;
+        }
+      `}</style>
+    </div>
   );
 };
 

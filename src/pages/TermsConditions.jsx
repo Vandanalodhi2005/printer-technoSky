@@ -15,7 +15,7 @@ const TermsConditions = () => {
                         <p className="last-updated">Last Updated: January 26, 2026</p>
                         <p className="intro-text">
                             Please read these terms carefully. By using our website, you agree to these terms
-                            which govern your use of Prints Carts and any purchases you make.
+                            which govern your use of Ink Kart LLC and any purchases you make.
                         </p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const TermsConditions = () => {
                             <h2>Company Information</h2>
                             <div className="feature-grid">
                                 <div className="feature-item">
-                                    <h4>🏢 Prints Carts</h4>
+                                    <h4>🏢 Ink Kart LLC</h4>
                                     <p>Independent online retailer</p>
                                 </div>
                                 <div className="feature-item">
@@ -79,11 +79,11 @@ const TermsConditions = () => {
                                 </div>
                                 <div className="feature-item">
                                     <h4>📧 Contact</h4>
-                                    <p><a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                                    <p><a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                                 </div>
                                 <div className="feature-item">
                                     <h4>🌐 Website</h4>
-                                    <p><a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                                    <p><a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                                 </div>
                             </div>
                             <p className="policy-note">
@@ -210,7 +210,7 @@ const TermsConditions = () => {
 
                         <section className="policy-section">
                             <h2>Intellectual Property</h2>
-                            <p>All website content is owned by or licensed to Prints Carts and protected by intellectual property laws.</p>
+                            <p>All website content is owned by or licensed to Ink Kart LLC and protected by intellectual property laws.</p>
                             <p>You may not copy, modify, distribute, or reproduce any content without written permission.</p>
                             <p className="policy-note">
                                 All third-party trademarks and brand names belong to their respective owners and are used only for identification.
@@ -219,7 +219,7 @@ const TermsConditions = () => {
 
                         <section className="policy-section">
                             <h2>Limitation of Liability</h2>
-                            <p>To the extent permitted by law, Prints Carts is not liable for:</p>
+                            <p>To the extent permitted by law, Ink Kart LLC is not liable for:</p>
                             <ul>
                                 <li>Indirect or incidental damages</li>
                                 <li>Loss of data, revenue, or profits</li>
@@ -240,9 +240,9 @@ const TermsConditions = () => {
                         {/* Contact Section */}
                         <div className="contact-info-box">
                             <h3>Questions About These Terms?</h3>
-                            <p>📧 Email: <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                            <p>📧 Email: <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                             <p>📍 Address: 7181 Beacon Dr 15, Reno, NV 89506</p>
-                            <p>🌐 Website: <a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                            <p>🌐 Website: <a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -253,3 +253,5 @@ const TermsConditions = () => {
 };
 
 export default TermsConditions;
+
+

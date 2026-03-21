@@ -5,7 +5,7 @@ const Commitment = () => {
         <div className="commitment-container">
           <h2>Our Commitment to You</h2>
           <p className="commitment-intro">
-            At Prints Carts, we believe in honest communication, transparent product listings, and human-friendly customer service. We aim to provide a helpful experience where customers feel informed, supported, and confident in their purchases.
+            At Ink Kart LLC, we believe in honest communication, transparent product listings, and human-friendly customer service. We aim to provide a helpful experience where customers feel informed, supported, and confident in their purchases.
           </p>
           <p>
             We continuously improve our platform to make browsing, comparing, and purchasing printing essentials more convenient.
@@ -67,4 +67,5 @@ const Commitment = () => {
 };
 
 export default Commitment;
+
 

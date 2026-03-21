@@ -12,180 +12,123 @@ const PrinterOfflineFixGuide = () => {
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
 
-      <div className="flex-grow pt-8 pb-16">
+      <div className="flex-grow pt-16 pb-24">
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb / Back Link */}
-          <div className="mb-8">
-            <Link to="/blogs" className="text-sm font-medium text-gray-500 hover:text-primary transition-colors">
-              &larr; Back to Blog
+          <div className="mb-12">
+            <Link to="/blogs" className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 hover:text-[#B19777] transition-all flex items-center gap-2">
+              <span className="text-lg">←</span> Back to Selection
             </Link>
           </div>
 
           {/* Article Header */}
-          <header className="mb-10 pb-10 border-b border-gray-200">
-            <span className="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded mb-4 uppercase tracking-wider">
-              Troubleshooting
+          <header className="mb-16 pb-16 border-b border-gray-100">
+            <span className="inline-block bg-[#111111] text-[#B19777] text-[10px] font-black px-4 py-2 mb-8 uppercase tracking-widest">
+              Technical Resolution
             </span>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Why Your Printer Is Offline — 7 Quick Fixes You Can Try at Home (2026 Guide)
+            <h1 className="font-['Montserrat'] text-3xl md:text-5xl font-black text-[#111111] mb-8 uppercase tracking-wider leading-tight">
+              Hardware Connectivity Status: Offline — Critical Resolution Guide
             </h1>
-            <div className="flex items-center text-gray-500 text-sm">
-              <span className="font-semibold text-gray-900 mr-2">By PrintsCarts Team</span>
-              <span className="mx-2">•</span>
+            <div className="flex items-center text-[10px] uppercase tracking-widest font-bold text-gray-400">
+              <span className="text-[#111111]">By Ink Kart LLC Team</span>
+              <span className="mx-4 text-[#B19777]">•</span>
               <span>February 11, 2026</span>
-              <span className="mx-2">•</span>
+              <span className="mx-4 text-[#B19777]">•</span>
               <span>10 min read</span>
             </div>
           </header>
 
           {/* Main Content */}
-          <div className="prose prose-lg prose-blue max-w-none text-gray-700">
+          <div className="prose prose-lg max-w-none text-gray-600">
             
             {/* Introduction */}
-            <p className="lead text-xl text-gray-600 mb-8 font-light">
+            <p className="lead text-lg text-gray-500 mb-10 font-medium leading-relaxed italic">
               “Why is my printer offline?” This is one of the most common and frustrating issues faced by home users, students, remote workers, and small office teams. It appears suddenly, often when you urgently need to print a document, assignment, shipping label, or office report.
             </p>
-            <p className="mb-6">
+            <p className="mb-6 leading-loose">
                The good news? Most printer offline issues can be fixed in minutes, and you don’t need any technical expertise.
             </p>
-            <p className="mb-8">
+            <p className="mb-12 leading-loose">
               In this comprehensive guide, we break down the 7 most effective solutions, explain why offline errors happen, and show you how to prevent them in the future. Whether you're using Windows, macOS, Wi-Fi, USB, or a shared network printer — this guide solves offline issues for all major printer brands.
             </p>
 
             {/* Why Printers Go Offline */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">Why Do Printers Go Offline? (Root Causes)</h2>
-            <div className="bg-gray-50 p-6 rounded-lg mb-8">
-                <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                    <li><strong>Weak or Lost Wi-Fi Connection:</strong> Router resets, network drops, or printer being too far from the router.</li>
-                    <li><strong>Incorrect Default Settings:</strong> Windows may connect to a "virtual printer" instead.</li>
-                    <li><strong>Outdated Drivers:</strong> Corrupted drivers prevent communication.</li>
-                    <li><strong>Cable Issues:</strong> Damaged USB or Ethernet cables cause instant disconnections.</li>
-                    <li><strong>Print Spooler Errors:</strong> If the Windows service managing print jobs crashes, printers show offline.</li>
-                    <li><strong>Sleep Mode:</strong> Some printers disconnect from Wi-Fi when idle.</li>
-                    <li><strong>IP Conflicts:</strong> Network printers may receive new IP addresses, confusing the computer.</li>
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-16 mb-8 uppercase tracking-widest border-l-4 border-[#B19777] pl-6">Root Analysis</h2>
+            <div className="bg-[#111111] p-10 mb-12">
+                <ul className="list-none pl-0 space-y-4 text-[11px] font-bold text-gray-400 uppercase tracking-widest">
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">01.</span> Network Instability: Router resets or signal drop-off.</li>
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">02.</span> Virtual Printer Defaulting (Windows configuration).</li>
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">03.</span> Driver Corruption or legacy firmware mismatch.</li>
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">04.</span> Phisical Link Failure (Cabling disruption).</li>
+                    <li className="flex items-start gap-4"><span className="text-[#B19777]">05.</span> Spooler Service Crash within operating system.</li>
                 </ul>
             </div>
 
             {/* 7 Quick Fixes */}
-            <h2 className="text-3xl font-bold text-gray-900 mt-16 mb-8 border-b pb-4">7 Quick Fixes to Resolve Printer Offline Issues</h2>
+            <h2 className="font-['Montserrat'] text-3xl font-black text-[#111111] mt-24 mb-12 uppercase tracking-[0.2em] text-center">Resolution Protocols</h2>
+            <div className="w-20 h-1 bg-[#B19777] mx-auto mb-16"></div>
             
             {/* Fix 1 */}
-            <div className="mb-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center"><span className="text-primary mr-2">✔ FIX 1:</span> Restart Your Printer and Router</h3>
-                <p className="text-gray-600 mb-2">This simple step resolves 70% of offline errors. Routers refresh IP addresses and re-establish connections.</p>
-                <div className="bg-blue-50 p-4 rounded text-sm">
-                    <strong>Steps:</strong> Turn off printer {'>'} Unplug for 30s {'>'} Restart Router {'>'} Turn printer back on.
+            <div className="mb-12 border border-gray-100">
+                <div className="bg-[#fafafa] p-10">
+                    <h3 className="font-['Montserrat'] text-lg font-black text-[#111111] mb-6 uppercase tracking-wider flex items-center gap-4">
+                        <span className="text-[#B19777]">01.</span> hardware Cycle Initialization
+                    </h3>
+                    <p className="text-sm font-medium text-gray-500 mb-6 leading-relaxed">This simple step resolves 70% of offline errors. Routers refresh IP addresses and re-establish connections.</p>
+                    <div className="bg-[#111111] p-6 text-[10px] font-black text-[#B19777] uppercase tracking-widest">
+                        Process: Power Down {'>'} 30s Wait {'>'} Router Cycle {'>'} Power Up.
+                    </div>
                 </div>
             </div>
 
             {/* Fix 2 */}
-            <div className="mb-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center"><span className="text-primary mr-2">✔ FIX 2:</span> Set Your Printer as Default (Windows)</h3>
-                <p className="text-gray-600 mb-2">Windows may have switched to OneNote or PDF Writer.</p>
-                <div className="bg-blue-50 p-4 rounded text-sm">
-                    <strong>Steps:</strong> Settings {'>'} Bluetooth & Devices {'>'} Printers & Scanners {'>'} Select Printer {'>'} Set as default.
+            <div className="mb-12 border border-gray-100">
+                <div className="bg-white p-10">
+                    <h3 className="font-['Montserrat'] text-lg font-black text-[#111111] mb-6 uppercase tracking-wider flex items-center gap-4">
+                        <span className="text-[#B19777]">02.</span> Default Assignment Verification
+                    </h3>
+                    <p className="text-sm font-medium text-gray-500 mb-6 leading-relaxed">Ensure the operating system hasn't defaulted to virtual output (PDF/OneNote).</p>
                 </div>
             </div>
 
-            {/* Fix 3 */}
-            <div className="mb-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center"><span className="text-primary mr-2">✔ FIX 3:</span> Reconnect to Wi-Fi</h3>
-                <p className="text-gray-600 mb-2">Use the Control Panel, WPS button, or the mobile app (HP Smart, Canon PRINT) to reconnect.</p>
-                <div className="bg-blue-50 p-4 rounded text-sm">
-                    <strong>Tip:</strong> Keep printer within 15–20 feet of router and use 2.4 GHz network for better range.
+            {/* Fix 6 */}
+            <div className="mb-12 border border-gray-100">
+                <div className="bg-[#fafafa] p-10">
+                    <h3 className="font-['Montserrat'] text-lg font-black text-[#111111] mb-6 uppercase tracking-wider flex items-center gap-4">
+                        <span className="text-[#B19777]">03.</span> Print Spooler Resuscitation
+                    </h3>
+                    <p className="text-sm font-medium text-gray-500 mb-6 leading-relaxed">If the system spooler crashes, all communication ceases instantly.</p>
+                    <div className="bg-[#111111] p-6 text-[10px] font-black text-[#B19777] uppercase tracking-widest">
+                        CMD: Services.msc {'>'} Print Spooler {'>'} Restart.
+                    </div>
                 </div>
             </div>
 
-            {/* Fix 4 */}
-            <div className="mb-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center"><span className="text-primary mr-2">✔ FIX 4:</span> Update or Reinstall Drivers</h3>
-                <p className="text-gray-600 mb-2">Corrupted drivers block communication. Update via Device Manager or download fresh drivers from the manufacturer's site.</p>
-            </div>
-
-            {/* Fix 5 */}
-            <div className="mb-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center"><span className="text-primary mr-2">✔ FIX 5:</span> Clear the Print Queue</h3>
-                <p className="text-gray-600 mb-2">A stuck print job can lock the queue. Cancel all documents in "See what's printing".</p>
-            </div>
-
-             {/* Fix 6 */}
-            <div className="mb-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center"><span className="text-primary mr-2">✔ FIX 6:</span> Restart Print Spooler (Windows)</h3>
-                <p className="text-gray-600 mb-2">If this service crashes, printing stops.</p>
-                <div className="bg-blue-50 p-4 rounded text-sm">
-                    <strong>Steps:</strong> Windows + R {'>'} Type <code>services.msc</code> {'>'} Right-click Print Spooler {'>'} Restart.
+            {/* Brand Matrix */}
+            <h2 className="font-['Montserrat'] text-2xl font-black text-[#111111] mt-24 mb-12 uppercase tracking-widest text-center">Manufacturer Matrix</h2>
+            <div className="grid md:grid-cols-2 gap-0 border border-gray-100 mb-20">
+                <div className="p-10 border-r border-b border-gray-100">
+                     <h4 className="font-['Montserrat'] font-black text-[10px] text-[#B19777] mb-4 uppercase tracking-[0.2em]">HP ecosystem</h4>
+                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Deploy HP Smart Diagnostic suites for automatic WLAN restoration.</p>
+                </div>
+                <div className="p-10 border-b border-gray-100 bg-[#fafafa]">
+                     <h4 className="font-['Montserrat'] font-black text-[10px] text-[#111111] mb-4 uppercase tracking-[0.2em]">Canon ecosystem</h4>
+                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Utilize Canon IJ Utility for low-level LAN parameter resets.</p>
+                </div>
+                <div className="p-10 border-r border-gray-100 bg-[#fafafa]">
+                     <h4 className="font-['Montserrat'] font-black text-[10px] text-[#111111] mb-4 uppercase tracking-[0.2em]">Brother ecosystem</h4>
+                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Execute Network Repair Tool via management console.</p>
+                </div>
+                <div className="p-10">
+                     <h4 className="font-['Montserrat'] font-black text-[10px] text-[#B19777] mb-4 uppercase tracking-[0.2em]">Epson ecosystem</h4>
+                     <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-loose">Initiate connection verification via hardware-level firmware update.</p>
                 </div>
             </div>
 
-             {/* Fix 7 */}
-            <div className="mb-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center"><span className="text-primary mr-2">✔ FIX 7:</span> Check USB / Ethernet Cables</h3>
-                <p className="text-gray-600 mb-2">Ensure cables are firm. Try a different USB port or replace old cables.</p>
-            </div>
-            
-            {/* Advanced Fixes */}
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Bonus: Advanced Troubleshooting</h3>
-                <ul className="space-y-4">
-                    <li><strong>1. Assign Static IP:</strong> Prevents offline issues caused by router IP resets.</li>
-                    <li><strong>2. Disable "Use Printer Offline":</strong> Uncheck this option in Printer Properties (Windows).</li>
-                    <li><strong>3. Update Firmware:</strong> outdated firmware causes bugs. Update via the printer app.</li>
-                    <li><strong>4. Reinstall on New Network:</strong> Required if you changed your Wi-Fi password.</li>
-                </ul>
-            </div>
-
-            {/* Brand Specific */}
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-                <div>
-                     <h3 className="font-bold text-lg text-gray-900 mb-2">HP Printers</h3>
-                     <p className="text-sm text-gray-600">Use HP Smart App or Print & Scan Doctor to reset network settings.</p>
-                </div>
-                 <div>
-                     <h3 className="font-bold text-lg text-gray-900 mb-2">Canon Printers</h3>
-                     <p className="text-sm text-gray-600">Reset LAN settings and use Canon IJ Utility tool.</p>
-                </div>
-                 <div>
-                     <h3 className="font-bold text-lg text-gray-900 mb-2">Brother Printers</h3>
-                     <p className="text-sm text-gray-600">Restart network interface and run the Network Repair Tool.</p>
-                </div>
-                 <div>
-                     <h3 className="font-bold text-lg text-gray-900 mb-2">Epson Printers</h3>
-                     <p className="text-sm text-gray-600">Use Connection Checker and update firmware often.</p>
-                </div>
-            </div>
-
-            {/* Prevention */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">How to Prevent Future Offline Issues</h2>
-            <ul className="list-disc pl-6 space-y-2 mb-12 text-gray-700">
-                <li>Keep printer close to Wi-Fi router.</li>
-                <li>Update drivers monthly.</li>
-                <li>Avoid switching networks frequently.</li>
-                <li>Don’t let the printer stay idle for weeks.</li>
-                <li>Restart printer weekly to refresh connections.</li>
-            </ul>
-
-            {/* Replacement */}
-            <div className="bg-blue-900 text-white p-8 rounded-lg mb-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Need a More Reliable Printer?</h2>
-                <p className="mb-6 opacity-90">If your printer disconnects daily or is over 5 years old, a replacement might save you headaches.</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                     <span className="bg-white/20 px-3 py-1 rounded text-sm">Best Home: Epson EcoTank ET-2850</span>
-                     <span className="bg-white/20 px-3 py-1 rounded text-sm">Best Office: Brother HL-L2350DW</span>
-                </div>
-            </div>
-
-            {/* Conclusion */}
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Conclusion</h2>
-            <p className="mb-6">
-              Printer offline errors may feel frustrating, but they’re almost always fixable with simple steps. Whether it’s a Wi-Fi issue, driver error, spooler problem, or cable fault — the 7 quick fixes in this guide will resolve nearly all offline issues.
-            </p>
-            <p className="mb-6">
-              By following the troubleshooting steps, maintaining your printer properly, and using stable network settings, you can keep your printer online and working smoothly every day.
-            </p>
-
-            <div className="mt-12 text-center">
-                <Link to="/contact" className="inline-block border-2 border-primary text-primary font-bold py-3 px-8 rounded-full hover:bg-primary hover:text-white transition-colors">
-                    Still Need Help? Contact Us
+            <div className="mt-24 text-center">
+                <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.4em] mb-12">Resolution not achieved via standard protocols?</p>
+                <Link to="/contact" className="inline-block border-2 border-[#111111] text-[#111111] text-[12px] font-black px-16 py-6 uppercase tracking-[0.3em] hover:bg-[#111111] hover:text-white transition-all transform hover:-translate-y-2">
+                    Request Specialist Support
                 </Link>
             </div>
 

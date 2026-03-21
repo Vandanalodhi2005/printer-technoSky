@@ -21,8 +21,12 @@ import ProductDetails from "./pages/ProductDetails";
 import RefundReturnPolicy from "./pages/RefundReturnPolicy";
 import PolicyHub from "./pages/PolicyHub";
 import Blogs from "./pages/Blogs";
+
+// Blog Guides
 import TopHomePrinters2026 from "./pages/blogs/TopHomePrinters2026";
-import InkjetVsLaserGuide from "./pages/blogs/InkjetVsLaserGuide";import PrinterOfflineFixGuide from './pages/blogs/PrinterOfflineFixGuide';import SaveMoneyInkGuide from "./pages/blogs/SaveMoneyInkGuide";
+import InkjetVsLaserGuide from "./pages/blogs/InkjetVsLaserGuide";
+import PrinterOfflineFixGuide from './pages/blogs/PrinterOfflineFixGuide';
+import SaveMoneyInkGuide from "./pages/blogs/SaveMoneyInkGuide";
 import PrinterSetupGuide from "./pages/blogs/PrinterSetupGuide";
 import EcoFriendlyPrintingGuide from "./pages/blogs/EcoFriendlyPrintingGuide";
 
@@ -46,9 +50,6 @@ import AdminSettings from "./components/admin/Pages/AdminSettings";
 import AdminChat from "./components/admin/Pages/AdminChat";
 import AdminAnalytics from "./components/admin/Pages/AdminAnalytics";
 import AdminLayout from "./components/admin/Layout/AdminLayout";
-// import Products from "./pages/Products";
-// import Orders from "./pages/Orders";
-// import Customers from "./pages/Customers";
 import Settings from "./pages/Settings";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
@@ -58,7 +59,6 @@ import TrackOrder from "./pages/TrackOrder";
 
 import AdminRoute from "./components/admin/AdminRoute";
 import ScrollToTop from "./components/common/ScrollToTop";
-import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
@@ -68,11 +68,10 @@ function App() {
             <ScrollToTop />
             
             <Routes>
-              {/* Public */}
+              {/* Public Routes */}
               <Route path="/" element={<Home />} />
               <Route path="/printers" element={<Printers />} />
               <Route path="/product/:slug" element={<ProductDetails />} />
-              <Route path="/printers" element={<Printers />} />
               <Route path="/ink-toner" element={<InkToner />} />
               <Route path="/ink-toner/:id" element={<ProductDetails />} />
               <Route path="/about" element={<AboutUs />} />
@@ -95,16 +94,16 @@ function App() {
               <Route path="/accessibility" element={<Accessibility />} />
               <Route path="/disclaimer" element={<Disclaimer />} />
 
-              {/* Auth */}
+              {/* Auth Routes */}
               <Route path="/signin" element={<SignIn />} />
               <Route path="/signup" element={<SignUp />} />
 
-              {/* Shop */}
+              {/* Shop Routes */}
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/order-success" element={<OrderSuccess />} />
 
-              {/* User */}
+              {/* User Routes */}
               <Route path="/profile" element={<Profile />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
@@ -113,25 +112,25 @@ function App() {
               <Route path="/order/:id" element={<OrderDetails />} />
               <Route path="/track-order" element={<TrackOrder />} />
 
-              {/* Admin */}
-            <Route path="/admin" element={
-              <AdminRoute>
-                 <AdminLayout />
-              </AdminRoute>
-            }>
-               <Route path="dashboard" element={<AdminDashboard />} />
-               <Route path="products" element={<AdminProducts />} />
-               <Route path="orders" element={<AdminOrders />} />
-               <Route path="customers" element={<AdminCustomers />} />
-               <Route path="categories" element={<AdminCategories />} />
-               <Route path="chat" element={<AdminChat />} />
-               <Route path="analytics" element={<AdminAnalytics />} />
-               <Route path="settings" element={<AdminSettings />} />
-               <Route index element={<Navigate to="dashboard" replace />} />
-            </Route>
+              {/* Admin Routes */}
+              <Route path="/admin" element={
+                <AdminRoute>
+                   <AdminLayout />
+                </AdminRoute>
+              }>
+                <Route path="dashboard" element={<AdminDashboard />} />
+                <Route path="products" element={<AdminProducts />} />
+                <Route path="orders" element={<AdminOrders />} />
+                <Route path="customers" element={<AdminCustomers />} />
+                <Route path="categories" element={<AdminCategories />} />
+                <Route path="chat" element={<AdminChat />} />
+                <Route path="analytics" element={<AdminAnalytics />} />
+                <Route path="settings" element={<AdminSettings />} />
+                <Route index element={<Navigate to="dashboard" replace />} />
+              </Route>
 
-            {/* Old Dashboard Routes (Commented out/Removed) */}
-            {/* <Route path="/dashboard" element={...} /> */}
+              {/* Catch-all Redirect */}
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Router>
         </FavoritesProvider>

@@ -98,7 +98,7 @@ const Disclaimer = () => {
                             </ul>
 
                             <p className="policy-note">
-                                Prints Carts is not responsible for unintentional typographical errors, outdated listings,
+                                Ink Kart LLC is not responsible for unintentional typographical errors, outdated listings,
                                 or minor variations between product images and physical items.
                             </p>
                         </section>
@@ -107,7 +107,7 @@ const Disclaimer = () => {
                             <h2>No Professional or Technical Advice</h2>
                             <p>All content on this website is provided for informational and retail purposes only.</p>
 
-                            <h3>Prints Carts Does NOT Provide:</h3>
+                            <h3>Ink Kart LLC Does NOT Provide:</h3>
                             <div className="feature-grid">
                                 <div className="feature-item">
                                     <h4>❌ Setup Instructions</h4>
@@ -135,7 +135,7 @@ const Disclaimer = () => {
 
                         <section className="policy-section">
                             <h2>Brand Independence</h2>
-                            <p>Prints Carts is an independent online retailer.</p>
+                            <p>Ink Kart LLC is an independent online retailer.</p>
                             <p>We are <strong>not affiliated with, sponsored by, or endorsed by</strong> any printer or technology manufacturer, including:</p>
 
                             <div className="feature-grid">
@@ -179,7 +179,7 @@ const Disclaimer = () => {
                             <h3>Important Notes:</h3>
                             <ul>
                                 <li>Warranty terms vary by brand and product</li>
-                                <li>Manufacturer warranties are not controlled by Prints Carts</li>
+                                <li>Manufacturer warranties are not controlled by Ink Kart LLC</li>
                                 <li>Coverage depends on the manufacturer's policies and region</li>
                                 <li>Some products may have limited or no warranty</li>
                             </ul>
@@ -199,7 +199,7 @@ const Disclaimer = () => {
                                 <li>External resources and tools</li>
                             </ul>
 
-                            <h3>Prints Carts is NOT Responsible For:</h3>
+                            <h3>Ink Kart LLC is NOT Responsible For:</h3>
                             <div className="feature-grid">
                                 <div className="feature-item">
                                     <h4>❌ External Content</h4>
@@ -224,7 +224,7 @@ const Disclaimer = () => {
 
                         <section className="policy-section">
                             <h2>Limitation of Liability</h2>
-                            <p>To the fullest extent permitted by law, Prints Carts is not liable for:</p>
+                            <p>To the fullest extent permitted by law, Ink Kart LLC is not liable for:</p>
                             <ul>
                                 <li>Indirect, incidental, or consequential damages</li>
                                 <li>Loss of data, revenue, or business opportunities</li>
@@ -242,9 +242,9 @@ const Disclaimer = () => {
                         {/* Contact Section */}
                         <div className="contact-info-box">
                             <h3>Questions About This Disclaimer?</h3>
-                            <p>📧 Email: <a href="mailto:support@printscarts.com">support@printscarts.com</a></p>
+                            <p>📧 Email: <a href="mailto:support@inkkartllc.com">support@inkkartllc.com</a></p>
                             <p>📍 Address: 7181 Beacon Dr 15, Reno, NV 89506</p>
-                            <p>🌐 Website: <a href="https://www.printscarts.com">www.printscarts.com</a></p>
+                            <p>🌐 Website: <a href="https://www.inkkartllc.com">www.inkkartllc.com</a></p>
                             <p>We're happy to provide clarity on any of the information listed above.</p>
                         </div>
                     </div>
@@ -256,3 +256,5 @@ const Disclaimer = () => {
 };
 
 export default Disclaimer;
+
+

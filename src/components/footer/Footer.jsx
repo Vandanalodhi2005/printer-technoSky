@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FiSearch } from 'react-icons/fi';
+import { FiSearch, FiShield, FiTruck } from 'react-icons/fi';
 import './Footer.css';
-const logo = "/PrintsCartslogo.png";
 
 const Footer = () => {
   const [trackId, setTrackId] = useState('');
@@ -20,55 +19,55 @@ const Footer = () => {
     <footer className="footer-enhanced">
       <div className="footer-container">
         <div className="footer-content">
-          {/* Company Info */}
           <div className="footer-section">
-            <Link to="/" className="inline-block mb-4">
-               <img src={logo} alt="PrintsCarts" className="h-12 md:h-24 w-auto object-contain brightness-0 invert opacity-90" />
+            <Link to="/" className="inline-block mb-10 group">
+              <div className="flex items-center gap-5">
+                  <svg width="40" height="40" viewBox="0 0 100 100" className="transition-transform duration-700 group-hover:scale-105">
+                    <circle cx="50" cy="50" r="48" stroke="#B19777" strokeWidth="2" fill="none" />
+                    <path d="M50 25 L72 68 L28 68 Z" fill="#B19777" />
+                    <rect x="47" y="75" width="6" height="6" fill="#B19777" />
+                  </svg>
+                  <span className="font-['Montserrat'] font-black text-2xl text-white uppercase tracking-[0.4em]">INK KART <span className="text-[#B19777]">LLC</span></span>
+              </div>
             </Link>
             <p className="footer-description">
-              Your trusted source for printers, ink, toner, and printing supplies.
-              We're committed to providing quality products with transparent service.
+              Elite professional printing hardware, architectural-grade output, 
+              and specialized toner systems for demanding enterprise environments. 
+              Ink Kart LLC represents the absolute standard in printing technology.
             </p>
             
-            {/* Track Order Widget */}
-            <div className="mt-6 mb-6">
-              <h5 className="text-white font-bold mb-2 text-sm">Track Your Order</h5>
-              <form onSubmit={handleTrackSubmit} className="flex gap-2">
-                <input 
-                  type="text" 
-                  placeholder="Enter Order ID" 
-                  className="bg-slate-800 text-white text-sm px-3 py-2 rounded-lg border border-slate-700 focus:outline-none focus:border-blue-500 flex-1 w-full"
-                  value={trackId}
-                  onChange={(e) => setTrackId(e.target.value)}
-                />
-                <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg transition-colors">
-                  <FiSearch />
-                </button>
-              </form>
+            <div className="flex gap-10 mb-10 text-gray-500">
+               <div className="flex items-center gap-3 transition-colors hover:text-[#B19777]">
+                  <FiShield size={16} />
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em]">SECURE ACCESS</span>
+               </div>
+               <div className="flex items-center gap-3 transition-colors hover:text-[#B19777]">
+                  <FiTruck size={16} />
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em]">GLOBAL SUPPLY</span>
+               </div>
             </div>
 
             <p className="footer-copyright">
-              &copy; {new Date().getFullYear()} Prints Carts. All rights reserved.
+              &copy; {new Date().getFullYear()} Ink Kart LLC. All rights reserved.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="footer-section">
-            <h4 className="footer-section-title">Quick Links</h4>
+            <h4 className="footer-section-title">Directory</h4>
             <ul className="footer-links">
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/faqs">FAQs</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-              <li><Link to="/printers">Shop Printers</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/printers">Printers</Link></li>
               <li><Link to="/ink-toner">Ink & Toner</Link></li>
-              <li><Link to="/track-order">Track Order</Link></li>
+              <li><Link to="/blogs">Blog</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Policies */}
           <div className="footer-section">
-            <h4 className="footer-section-title">Policies</h4>
+            <h4 className="footer-section-title">Technical Support</h4>
             <ul className="footer-links">
+              <li><Link to="/track-order">Logistical Tracking</Link></li>
               <li><Link to="/shipping-policy">Shipping Policy</Link></li>
               <li><Link to="/refund-return-policy">Returns & Refunds</Link></li>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
@@ -76,21 +75,28 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal */}
           <div className="footer-section">
-            <h4 className="footer-section-title">Legal</h4>
-            <ul className="footer-links">
-              <li><Link to="/cookie-policy">Cookie Policy</Link></li>
-              <li><Link to="/do-not-sell">Do Not Sell</Link></li>
-              <li><Link to="/accessibility">Accessibility</Link></li>
-              <li><Link to="/disclaimer">Disclaimer</Link></li>
-            </ul>
+            <h4 className="footer-section-title">Status Check</h4>
+            <form onSubmit={handleTrackSubmit} className="flex gap-0">
+                <input 
+                  type="text" 
+                  placeholder="Verification ID" 
+                  className="bg-[#181818] text-white text-[10px] px-6 py-4 rounded-0 border border-[#333] focus:outline-none focus:border-[#B19777] flex-1 uppercase tracking-widest"
+                  value={trackId}
+                  onChange={(e) => setTrackId(e.target.value)}
+                />
+                <button type="submit" className="bg-[#B19777] hover:bg-white hover:text-[#111111] text-white px-6 py-4 rounded-0 transition-all">
+                  <FiSearch />
+                </button>
+            </form>
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="footer-bottom">
-          <p>Made with care for our customers | Independent Retailer</p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-[0.4em] font-black opacity-50 hover:opacity-100 transition-opacity">
+             <p>Authorized Independent Printing Retailer Since 2026</p>
+             <p className="text-[#B19777]">Ink Kart LLC • New York, NY</p>
+          </div>
         </div>
       </div>
     </footer>
